@@ -9,7 +9,6 @@
         }
     ],
     "adult": false,
-    "arcio": "dev",
     "auth": false,
     "build_interval": 180,
     "build_type": "hybrid",
