@@ -1,26 +1,51 @@
 {
     "access_token": "",
-    "account_list": [],
+    "account_list": [
+        {
+            "username": "demo",
+            "password": "demo",
+            "pic": "",
+            "auth": "53amh3tcl19zdiqo8t48mbd0ib0i7s4zfweyyowhnadlefda51"
+        }
+    ],
     "adult": false,
+    "arcio": "dev",
     "auth": false,
     "build_interval": 180,
     "build_type": "hybrid",
-    "category_list": [],
+    "category_list": [
+        {
+            "adult": false,
+            "anilist": false,
+            "id": "",
+            "language": "pt-br",
+            "name": "Movies",
+            "type": "Movies"
+        },
+        {
+            "adult": false,
+            "anilist": false,
+            "id": "",
+            "language": "pt-br",
+            "name": "Series",
+            "type": "TV Shows"
+        }
+    ],
     "client_id": "",
     "client_secret": "",
     "cloudflare": "",
-    "fetch_assets": false,
+    "fetch_assets": true,
     "refresh_token": "",
-    "remove_duplicates": false,
-    "remove_no_poster": false,
+    "remove_duplicates": true,
+    "remove_no_poster": true,
     "secret_key": "",
     "tmdb_api_key": "",
     "token_expiry": "",
-    "prefer_mkv": false,
+    "prefer_mkv": true,
     "prefer_mp4": true,
     "transcoded": true,
     "service_accounts": [],
-    "signup": true,
+    "signup": false,
     "ui_config": {
         "custom_button": {
             "text": "SITE BUTTON"
@@ -28,6 +53,7 @@
         "icon_on_nav": true,
         "hide_news": true,
         "title": "YOU SITE NAME",
-        "icon": "YOU URL ICON"
+        "icon": "YOU URL ICON",
+        "range": "0"
     }
 }
