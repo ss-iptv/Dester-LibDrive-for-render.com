@@ -1,0 +1,33 @@
+{
+    "access_token": "",
+    "account_list": [],
+    "adult": false,
+    "auth": false,
+    "build_interval": 180,
+    "build_type": "hybrid",
+    "category_list": [],
+    "client_id": "",
+    "client_secret": "",
+    "cloudflare": "",
+    "fetch_assets": false,
+    "refresh_token": "",
+    "remove_duplicates": false,
+    "remove_no_poster": false,
+    "secret_key": "",
+    "tmdb_api_key": "",
+    "token_expiry": "",
+    "prefer_mkv": false,
+    "prefer_mp4": true,
+    "transcoded": true,
+    "service_accounts": [],
+    "signup": true,
+    "ui_config": {
+        "custom_button": {
+            "text": "SITE BUTTON"
+        },
+        "icon_on_nav": true,
+        "hide_news": true,
+        "title": "YOU SITE NAME",
+        "icon": "YOU URL ICON"
+    }
+}
