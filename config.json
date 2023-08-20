@@ -38,7 +38,7 @@
     "refresh_token": "",
     "remove_duplicates": true,
     "remove_no_poster": true,
-    "secret_key": "",
+    "secret_key": "administrator",
     "tmdb_api_key": "",
     "token_expiry": "",
     "prefer_mkv": true,
