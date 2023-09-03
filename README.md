@@ -29,7 +29,8 @@ Here is a possible way to rewrite the text in Markdown for the README.md on GitH
 - Choose the project that you previously forked
 - Give a name to the project and deploy it on Render
 - Write down the URL generated and wait for it to finish
-- In the start command field, enter the following command: `python3 -m gunicorn main:app`
+- In the start command field, enter the following command: python3 -m gunicorn main:app
+- Another caveat of Render.com hosting is that the app is volatile, meaning every time the app restarts all the new data made is reset. This means any metadata gathered is deleted and any updates made to the config are removed. To combat this, I have added an option to store the config and metadata in a Google Drive folder. To enable this feature create a Render.com ‘config var’ named LIBDRIVE_CLOUD and set the value to any empty folder’s ID. Make sure not to modify any of the files made in it.
 - Done.
  
 ## How to use
@@ -80,7 +81,8 @@ Este é um projeto que permite que você crie um aplicativo web como o Plex usan
 - Escolha o projeto que você fez fork anteriormente
 - Dê um nome ao projeto e implante-o no Render
 - Anote o URL gerado e espere ele terminar
-- No campo de comando de início, digite o seguinte comando: `python3 -m gunicorn main:app`
+- No campo de comando de início, digite o seguinte comando: python3 -m gunicorn main:app
+- Outra ressalva do hospedagem Render.com é que o aplicativo é volátil, o que significa que toda vez que o aplicativo reinicia, todos os novos dados são redefinidos. Isso significa que qualquer metadado coletado é excluído e quaisquer atualizações feitas na configuração são removidas. Para combater isso, adicionei uma opção para armazenar a configuração e os metadados em uma pasta do Google Drive. Para habilitar esse recurso, crie uma ‘variável de configuração’ do Render.com chamada LIBDRIVE_CLOUD e defina o valor como o ID de qualquer pasta vazia. Certifique-se de não modificar nenhum dos arquivos criados nele.
 - Pronto.
 
 ## Como usar
