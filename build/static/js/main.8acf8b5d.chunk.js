@@ -3,18 +3,18 @@
         162: function(e) {
             e.exports = JSON.parse('{"a":"1"}')
         },
-        231: function(e, t, a) {},
-        233: function(e, t, a) {},
+        232: function(e, t, a) {},
         234: function(e, t, a) {},
         235: function(e, t, a) {},
         236: function(e, t, a) {},
-        239: function(e, t, a) {},
+        237: function(e, t, a) {},
         240: function(e, t, a) {},
         241: function(e, t, a) {},
         242: function(e, t, a) {},
-        244: function(e, t, a) {},
+        243: function(e, t, a) {},
         245: function(e, t, a) {},
-        246: function(e, t, a) {
+        246: function(e, t, a) {},
+        247: function(e, t, a) {
             "use strict";
             a.r(t);
             var n = a(3),
@@ -23,28 +23,28 @@
                 o = a(28),
                 s = a.n(o),
                 c = a(20),
-                l = a(34),
-                d = a(303),
-                u = a(318),
-                h = a(10),
+                l = a(35),
+                d = a(304),
+                h = a(319),
+                u = a(10),
                 p = a(11),
                 m = a(7),
                 j = a(13),
                 b = a(14),
-                g = a(285),
+                g = a(286),
                 O = a(185),
-                f = a(290),
-                v = a(291),
-                x = a(163),
-                y = a.n(x),
-                w = (a(56), a(1)),
+                f = a(291),
+                x = a(292),
+                v = a(163),
+                w = a.n(v),
+                y = (a(56), a(1)),
                 S = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             menuAnchor: !1
                         }, n.handleClick = n.handleClick.bind(Object(m.a)(n)), n.handleClose = n.handleClose.bind(Object(m.a)(n)), n
                     }
@@ -68,20 +68,20 @@
                             var e = this.props,
                                 t = e.accounts,
                                 a = e.ui_config,
-                                n = Object(w.jsx)(y.a, {});
-                            return t && t.pic && (t.pic.includes("http") || t.pic.includes("www")) && (n = Object(w.jsx)("img", {
+                                n = Object(y.jsx)(w.a, {});
+                            return t && t.pic && (t.pic.includes("http") || t.pic.includes("www")) && (n = Object(y.jsx)("img", {
                                 src: t.pic,
                                 width: "32px",
                                 alt: "profile-pic"
-                            })), Object(w.jsxs)("div", {
+                            })), Object(y.jsxs)("div", {
                                 className: "AccountMenu",
-                                children: [Object(w.jsx)(g.a, {
+                                children: [Object(y.jsx)(g.a, {
                                     "aria-label": "more",
                                     "aria-controls": "account-menu",
                                     "aria-haspopup": "true",
                                     onClick: this.handleClick,
                                     children: n
-                                }), Object(w.jsxs)(O.a, {
+                                }), Object(y.jsxs)(O.a, {
                                     id: "account-menu",
                                     anchorEl: this.state.menuAnchor,
                                     anchorOrigin: {
@@ -95,29 +95,29 @@
                                     keepMounted: !0,
                                     open: Boolean(this.state.menuAnchor),
                                     onClose: this.handleClose,
-                                    children: [(a.custom_button || {}).text ? Object(w.jsxs)("div", {
-                                        children: [Object(w.jsx)(f.a, {}), Object(w.jsx)("a", {
+                                    children: [(a.custom_button || {}).text ? Object(y.jsxs)("div", {
+                                        children: [Object(y.jsx)(f.a, {}), Object(y.jsx)("a", {
                                             href: a.custom_button.url,
                                             target: "__blank",
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
+                                            children: Object(y.jsx)(x.a, {
                                                 onClick: this.handleClose,
                                                 children: a.custom_button.text
                                             })
                                         })]
-                                    }) : null, Object(w.jsx)(c.b, {
+                                    }) : null, Object(y.jsx)(c.b, {
                                         to: "/settings",
                                         className: "no_decoration_link",
-                                        children: Object(w.jsx)(v.a, {
+                                        children: Object(y.jsx)(x.a, {
                                             onClick: this.handleClose,
-                                            children: "Configura\xe7\xf5es"
+                                            children: "Settings"
                                         })
-                                    }), Object(w.jsx)(c.b, {
+                                    }), Object(y.jsx)(c.b, {
                                         to: "/logout",
                                         className: "no_decoration_link",
-                                        children: Object(w.jsx)(v.a, {
+                                        children: Object(y.jsx)(x.a, {
                                             onClick: this.handleClose,
-                                            children: "Sair"
+                                            children: "Logout"
                                         })
                                     })]
                                 })]
@@ -131,7 +131,7 @@
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             auth: window.sessionStorage.getItem("auth") || window.localStorage.getItem("auth"),
                             server: window.sessionStorage.getItem("server") || window.localStorage.getItem("server")
                         }, n
@@ -139,11 +139,11 @@
                     return Object(p.a)(a, [{
                         key: "componentDidMount",
                         value: function() {
-                            window.localStorage.getItem("_VERSION") || window.localStorage.setItem("_VERSION", Gt.a), window.localStorage.getItem("_VERSION") !== Gt.a && ("caches" in window && (caches.keys().then((function(e) {
+                            window.localStorage.getItem("_VERSION") || window.localStorage.setItem("_VERSION", Ht.a), window.localStorage.getItem("_VERSION") !== Ht.a && ("caches" in window && (caches.keys().then((function(e) {
                                 e.forEach((function(e) {
                                     caches.delete(e)
                                 }))
-                            })), window.location.reload(!0)), window.localStorage.setItem("_VERSION", Gt.a))
+                            })), window.location.reload(!0)), window.localStorage.setItem("_VERSION", Ht.a))
                         }
                     }, {
                         key: "render",
@@ -151,9 +151,9 @@
                             var e = this.state,
                                 t = e.auth,
                                 a = e.server;
-                            return t && a ? Object(w.jsx)(l.a, {
+                            return t && a ? Object(y.jsx)(l.a, {
                                 to: "/browse"
-                            }, Ne()) : Object(w.jsx)(l.a, {
+                            }, Ne()) : Object(y.jsx)(l.a, {
                                 to: "/login"
                             }, Ne())
                         }
@@ -168,7 +168,7 @@
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             auth: window.sessionStorage.getItem("auth") || window.localStorage.getItem("auth") || "0",
                             isLoaded: !1,
                             metadata: {},
@@ -188,7 +188,7 @@
                                 i = t.ui_config;
                             a && n || this.props.history.push("/logout");
                             var o = "".concat(n, "/api/v1/metadata"),
-                                s = "?a=".concat(a, "&r=0:").concat(i.range || "12", "&s=random&date-des&rmdup=true");
+                                s = "?a=".concat(a, "&r=0:").concat(i.range || "36", "&s=random&rmdup=true");
                             N.a.get(o + s).then((function(t) {
                                 for (var a = t.data.content, n = r.length - 1; n >= 0; n--) r[n].categoryInfo.pinned && a.unshift(r[n]);
                                 e.setState({
@@ -220,11 +220,11 @@
                                     })) : e.props.history.push("/logout")
                                 } else t.request && (n ? k.a.fire({
                                     title: "Error!",
-                                    text: "MeuDrive n\xe3o p\xf4de se comunicar com o servidor!",
+                                    text: "Drive could not communicate with the server! Is '".concat(n, "' the correct address?"),
                                     icon: "error",
-                                    confirmButtonText: "Sair",
+                                    confirmButtonText: "Logout",
                                     confirmButtonColor: Ft.palette.success.main,
-                                    cancelButtonText: "Tente Novamente",
+                                    cancelButtonText: "Retry",
                                     cancelButtonColor: Ft.palette.error.main,
                                     showCancelButton: !0
                                 }).then((function(t) {
@@ -238,12 +238,12 @@
                             var e = this.state,
                                 t = e.isLoaded,
                                 a = e.metadata;
-                            return t ? Object(w.jsxs)("div", {
+                            return console.log(a), t ? Object(y.jsxs)("div", {
                                 className: "Browse",
-                                children: [Object(w.jsx)(He, Object(n.a)({}, this.props)), Object(w.jsx)(Oe, {
+                                children: [Object(y.jsx)(Ge, Object(n.a)({}, this.props)), Object(y.jsx)(Oe, {
                                     metadata: a
-                                }), Object(w.jsx)(ke, {})]
-                            }) : Object(w.jsx)(Re, {})
+                                }), Object(y.jsx)(ke, {})]
+                            }) : Object(y.jsx)(Me, {})
                         }
                     }]), a
                 }(r.Component),
@@ -254,7 +254,7 @@
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             menuAnchor: !1
                         }, n.handleClick = n.handleClick.bind(Object(m.a)(n)), n.handleClose = n.handleClose.bind(Object(m.a)(n)), n
                     }
@@ -278,31 +278,23 @@
                             var e = this,
                                 t = this.props.categories,
                                 a = JSON.parse(window.localStorage.getItem("starred_lists") || "[]");
-                            return Object(w.jsxs)("div", {
+                            return Object(y.jsxs)("div", {
                                 className: "Browse",
                                 style: {
                                     marginRight: "15px"
                                 },
-                                children: [Object(w.jsxs)(B.a, {
+                                children: [Object(y.jsx)(B.a, {
                                     variant: "primary",
                                     "aria-controls": "browse-menu",
                                     "aria-haspopup": "true",
                                     onClick: this.handleClick,
-                                    children: ["Menu \xa0", Object(w.jsx)("i", {
-                                        class: "bi bi-caret-down-fill"
-                                    })]
-                                }), Object(w.jsxs)(O.a, {
+                                    children: "Browse"
+                                }), Object(y.jsxs)(O.a, {
                                     id: "browse-menu",
-                                    PaperProps: {
-                                        style: {
-                                            marginTop: "10px"
-                                        }
-                                    },
                                     anchorEl: this.state.menuAnchor,
                                     keepMounted: !0,
-                                    getContentAnchorEl: null,
                                     anchorOrigin: {
-                                        vertical: "bottom",
+                                        vertical: "top",
                                         horizontal: "center"
                                     },
                                     transformOrigin: {
@@ -311,27 +303,27 @@
                                     },
                                     open: Boolean(this.state.menuAnchor),
                                     onClose: this.handleClose,
-                                    children: [Object(w.jsx)(c.b, {
+                                    children: [Object(y.jsx)(c.b, {
                                         to: "/",
                                         className: "no_decoration_link",
-                                        children: Object(w.jsx)(v.a, {
+                                        children: Object(y.jsx)(x.a, {
                                             onClick: this.handleClose,
-                                            children: "Pagina Inicial"
+                                            children: "Home Page"
                                         })
-                                    }), Object(w.jsx)(f.a, {}), t.length ? t.map((function(t) {
-                                        return Object(w.jsx)(c.b, {
+                                    }), Object(y.jsx)(f.a, {}), t.length ? t.map((function(t) {
+                                        return Object(y.jsx)(c.b, {
                                             to: "/browse/".concat(t.name),
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
+                                            children: Object(y.jsx)(x.a, {
                                                 onClick: e.handleClose,
                                                 children: t.name
                                             })
                                         }, Ne())
-                                    })) : null, a.length ? Object(w.jsxs)("div", {
-                                        children: [Object(w.jsx)(f.a, {}), Object(w.jsx)(c.b, {
+                                    })) : null, a.length ? Object(y.jsxs)("div", {
+                                        children: [Object(y.jsx)(f.a, {}), Object(y.jsx)(c.b, {
                                             to: "/starred",
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
+                                            children: Object(y.jsx)(x.a, {
                                                 onClick: this.handleClose,
                                                 children: "Starred Lists"
                                             })
@@ -348,7 +340,7 @@
 
                     function a(e) {
                         var r;
-                        return Object(h.a)(this, a), (r = t.call(this, e)).state = Object(n.a)({
+                        return Object(u.a)(this, a), (r = t.call(this, e)).state = Object(n.a)({
                             menuAnchor: !1
                         }, e.state), r.handleClick = r.handleClick.bind(Object(m.a)(r)), r.handleClose = r.handleClose.bind(Object(m.a)(r)), r.handleSeason = r.handleSeason.bind(Object(m.a)(r)), r
                     }
@@ -386,17 +378,17 @@
                                 t = this.state,
                                 a = t.menuAnchor,
                                 n = t.videos;
-                            return Object(w.jsxs)("div", {
+                            return Object(y.jsxs)("div", {
                                 className: "info__button",
-                                children: [Object(w.jsxs)(B.a, {
+                                children: [Object(y.jsxs)(B.a, {
                                     variant: "primary",
                                     "aria-controls": "download-menu",
                                     "aria-haspopup": "true",
                                     onClick: this.handleClick,
-                                    children: [Object(w.jsx)("i", {
+                                    children: [Object(y.jsx)("i", {
                                         className: "bi bi-cloud-arrow-down-fill"
                                     }), "Download"]
-                                }), Object(w.jsxs)(O.a, {
+                                }), Object(y.jsxs)(O.a, {
                                     id: "download-menu",
                                     anchorEl: a,
                                     keepMounted: !0,
@@ -411,22 +403,23 @@
                                     open: Boolean(a),
                                     onClose: this.handleClose,
                                     children: [n.length ? n.map((function(t, a) {
-                                        return Object(w.jsxs)("div", {
-                                            children: [Object(w.jsx)("a", {
+                                        return Object(y.jsxs)("div", {
+                                            children: [Object(y.jsx)("a", {
                                                 href: encodeURI(t.url),
                                                 className: "no_decoration_link",
-                                                children: Object(w.jsx)(v.a, {
+                                                target: "_blank",
+                                                children: Object(y.jsx)(x.a, {
                                                     onClick: e.handleClose,
                                                     children: t.name
                                                 })
-                                            }), Object(w.jsx)("div", {
-                                                children: 0 == a && n.length > 1 ? Object(w.jsx)(f.a, {}) : null
+                                            }), Object(y.jsx)("div", {
+                                                children: 0 == a && n.length > 1 ? Object(y.jsx)(f.a, {}) : null
                                             })]
                                         }, Ne())
-                                    })) : null, this.props.tv ? Object(w.jsxs)("div", {
-                                        children: [Object(w.jsx)(f.a, {}), Object(w.jsx)(v.a, {
+                                    })) : null, this.props.tv ? Object(y.jsxs)("div", {
+                                        children: [Object(y.jsx)(f.a, {}), Object(y.jsx)(x.a, {
                                             onClick: this.handleSeason,
-                                            children: "Entire Season"
+                                            children: "Temporada Completa"
                                         })]
                                     }) : null]
                                 })]
@@ -434,43 +427,43 @@
                         }
                     }]), a
                 }(r.Component),
-                E = a(330),
-                A = a(103),
-                L = a(329),
-                M = a(295),
-                R = a(299),
+                E = a(331),
+                L = a(103),
+                R = a(330),
+                A = a(296),
+                M = a(300),
                 P = a(175),
                 U = a.n(P),
-                q = a(174),
-                J = a.n(q),
+                J = a(174),
+                q = a.n(J),
                 F = a(173),
                 W = a.n(F),
                 V = a(172),
                 K = a.n(V),
-                z = a(323),
-                G = a(300),
-                H = a(320),
-                X = a(292),
+                z = a(324),
+                H = a(301),
+                G = a(321),
                 Y = a(293),
-                Z = a(294),
-                Q = (a(229), a(177)),
-                $ = a.n(Q),
-                ee = a(142),
+                X = a(294),
+                $ = a(295),
+                Q = (a(230), a(177)),
+                Z = a.n(Q),
+                ee = a(120),
                 te = a.n(ee),
                 ae = a(144),
                 ne = a(170),
-                re = a(289),
-                ie = a(247),
-                oe = a(298),
-                se = a(296),
-                ce = a(297),
+                re = a(290),
+                ie = a(248),
+                oe = a(299),
+                se = a(297),
+                ce = a(298),
                 le = a(176),
                 de = a.n(le),
-                ue = (a(231), a(328)),
-                he = (a.p, a.p + "static/media/logo-full.529bd27b.svg"),
+                he = (a(232), a(329)),
+                ue = (a.p, a.p + "static/media/logo-full.529bd27b.svg"),
                 pe = a.p + "static/media/rectangle-poster.ffcc8a5b.svg",
                 me = a.p + "static/media/rectangle-backdrop.08364072.svg",
-                je = he,
+                je = ue,
                 be = pe,
                 ge = me,
                 Oe = function(e) {
@@ -479,7 +472,7 @@
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             currentEditing: null,
                             hide: e.hide || !1,
                             isAndroid: /(android)/i.test(navigator.userAgent || navigator.vendor || window.opera),
@@ -582,7 +575,7 @@
                         key: "handlePin",
                         value: function(e, t) {
                             var a = JSON.parse(window.localStorage.getItem("starred_lists") || "[]");
-                            t ? (a[e].categoryInfo.pinned = !1, window.localStorage.setItem("starred_lists", JSON.stringify(a)), this.setState({
+                            t ? (a[e].categoryInfo.pinned = !0, window.localStorage.setItem("starred_lists", JSON.stringify(a)), this.setState({
                                 metadata: a
                             })) : (a[e].categoryInfo.pinned = !1, window.localStorage.setItem("starred_lists", JSON.stringify(a)), this.setState({
                                 metadata: a
@@ -641,43 +634,43 @@
                                 s = t.metadata,
                                 l = t.server,
                                 d = t.star;
-                            return H.a.use([X.a, Y.a, Z.a]), d ? Object(w.jsxs)("div", {
+                            return G.a.use([Y.a, X.a, $.a]), d ? Object(y.jsxs)("div", {
                                 className: "Carousel",
                                 style: {
                                     paddingTop: "3%"
                                 },
                                 children: [s.length ? s.map((function(t, a) {
-                                    return t.children.length || !n ? Object(w.jsxs)("div", {
+                                    return t.children.length || !n ? Object(y.jsxs)("div", {
                                         className: "carousel__category",
                                         style: {
                                             margin: "0 auto 0 auto"
                                         },
-                                        children: [Object(w.jsx)("div", {
+                                        children: [Object(y.jsx)("div", {
                                             style: {
                                                 display: "flex",
                                                 alignItems: "center",
                                                 justifyContent: "center"
                                             },
-                                            children: Object(w.jsxs)("div", {
+                                            children: Object(y.jsxs)("div", {
                                                 style: {
                                                     width: "100%"
                                                 },
-                                                children: [Object(w.jsxs)("div", {
+                                                children: [Object(y.jsxs)("div", {
                                                     style: {
                                                         float: "left",
                                                         display: "flex",
                                                         justifyContent: "center",
                                                         alignItems: "center"
                                                     },
-                                                    children: [Object(w.jsx)(c.b, {
+                                                    children: [Object(y.jsx)(c.b, {
                                                         id: "".concat(t.categoryInfo.name),
                                                         to: "#".concat(t.categoryInfo.name),
                                                         className: "carousel__category__title no_decoration_link",
                                                         children: t.categoryInfo.name
-                                                    }), Object(w.jsx)(E.a, {
+                                                    }), Object(y.jsx)(E.a, {
                                                         title: "Edit",
                                                         placement: "top",
-                                                        children: Object(w.jsx)(g.a, {
+                                                        children: Object(y.jsx)(g.a, {
                                                             color: "primary",
                                                             onClick: function() {
                                                                 return e.handleEditOpen(a)
@@ -685,103 +678,103 @@
                                                             style: {
                                                                 marginLeft: "20px"
                                                             },
-                                                            children: Object(w.jsx)(K.a, {})
+                                                            children: Object(y.jsx)(K.a, {})
                                                         })
-                                                    }), Object(w.jsx)(E.a, {
+                                                    }), Object(y.jsx)(E.a, {
                                                         title: "Delete",
                                                         placement: "top",
-                                                        children: Object(w.jsx)(g.a, {
+                                                        children: Object(y.jsx)(g.a, {
                                                             color: "primary",
                                                             onClick: function() {
                                                                 return e.handleStarReset(a)
                                                             },
-                                                            children: Object(w.jsx)(W.a, {})
+                                                            children: Object(y.jsx)(W.a, {})
                                                         })
                                                     })]
-                                                }), Object(w.jsxs)("div", {
+                                                }), Object(y.jsxs)("div", {
                                                     style: {
                                                         float: "right",
                                                         display: "flex",
                                                         justifyContent: "center",
                                                         alignItems: "center"
                                                     },
-                                                    children: [Object(w.jsx)("input", {
+                                                    children: [Object(y.jsx)("input", {
                                                         id: "file-input-".concat(a),
                                                         hidden: !0,
                                                         onChange: e.handleStarImport,
                                                         type: "file"
-                                                    }), Object(w.jsx)("label", {
+                                                    }), Object(y.jsx)("label", {
                                                         htmlFor: "file-input-".concat(a),
-                                                        children: Object(w.jsx)(E.a, {
+                                                        children: Object(y.jsx)(E.a, {
                                                             title: "Upload",
                                                             placement: "top",
-                                                            children: Object(w.jsx)(g.a, {
+                                                            children: Object(y.jsx)(g.a, {
                                                                 color: "primary",
-                                                                children: Object(w.jsx)(J.a, {})
+                                                                children: Object(y.jsx)(q.a, {})
                                                             })
                                                         })
-                                                    }), Object(w.jsx)(E.a, {
+                                                    }), Object(y.jsx)(E.a, {
                                                         title: "Export",
                                                         placement: "top",
-                                                        children: Object(w.jsx)(g.a, {
+                                                        children: Object(y.jsx)(g.a, {
                                                             color: "primary",
                                                             onClick: function() {
                                                                 return e.handleStarExport(a)
                                                             },
-                                                            children: Object(w.jsx)(U.a, {})
+                                                            children: Object(y.jsx)(U.a, {})
                                                         })
-                                                    }), t.categoryInfo.pinned ? Object(w.jsx)(E.a, {
+                                                    }), t.categoryInfo.pinned ? Object(y.jsx)(E.a, {
                                                         title: "Unpin",
                                                         placement: "top",
-                                                        children: Object(w.jsx)(g.a, {
+                                                        children: Object(y.jsx)(g.a, {
                                                             color: "primary",
                                                             onClick: function() {
                                                                 return e.handlePin(a, !1)
                                                             },
-                                                            children: Object(w.jsxs)("svg", {
+                                                            children: Object(y.jsxs)("svg", {
                                                                 xmlns: "http://www.w3.org/2000/svg",
                                                                 enableBackground: "new 0 0 24 24",
                                                                 height: "24px",
                                                                 viewBox: "0 0 24 24",
                                                                 width: "24px",
                                                                 fill: Ft.palette.primary.main,
-                                                                children: [Object(w.jsx)("g", {
-                                                                    children: Object(w.jsx)("rect", {
+                                                                children: [Object(y.jsx)("g", {
+                                                                    children: Object(y.jsx)("rect", {
                                                                         fill: "none",
                                                                         height: "24",
                                                                         width: "24"
                                                                     })
-                                                                }), Object(w.jsx)("g", {
-                                                                    children: Object(w.jsx)("path", {
+                                                                }), Object(y.jsx)("g", {
+                                                                    children: Object(y.jsx)("path", {
                                                                         d: "M16,9V4l1,0c0.55,0,1-0.45,1-1v0c0-0.55-0.45-1-1-1H7C6.45,2,6,2.45,6,3v0 c0,0.55,0.45,1,1,1l1,0v5c0,1.66-1.34,3-3,3h0v2h5.97v7l1,1l1-1v-7H19v-2h0C17.34,12,16,10.66,16,9z",
                                                                         fillRule: "evenodd"
                                                                     })
                                                                 })]
                                                             })
                                                         })
-                                                    }) : Object(w.jsx)(E.a, {
+                                                    }) : Object(y.jsx)(E.a, {
                                                         title: "Pin",
                                                         placement: "top",
-                                                        children: Object(w.jsx)(g.a, {
+                                                        children: Object(y.jsx)(g.a, {
                                                             color: "primary",
                                                             onClick: function() {
                                                                 return e.handlePin(a, !0)
                                                             },
-                                                            children: Object(w.jsxs)("svg", {
+                                                            children: Object(y.jsxs)("svg", {
                                                                 xmlns: "http://www.w3.org/2000/svg",
                                                                 enableBackground: "new 0 0 24 24",
                                                                 height: "24px",
                                                                 viewBox: "0 0 24 24",
                                                                 width: "24px",
                                                                 fill: Ft.palette.primary.main,
-                                                                children: [Object(w.jsx)("g", {
-                                                                    children: Object(w.jsx)("rect", {
+                                                                children: [Object(y.jsx)("g", {
+                                                                    children: Object(y.jsx)("rect", {
                                                                         fill: "none",
                                                                         height: "24",
                                                                         width: "24"
                                                                     })
-                                                                }), Object(w.jsx)("g", {
-                                                                    children: Object(w.jsx)("path", {
+                                                                }), Object(y.jsx)("g", {
+                                                                    children: Object(y.jsx)("path", {
                                                                         d: "M14,4v5c0,1.12,0.37,2.16,1,3H9c0.65-0.86,1-1.9,1-3V4H14 M17,2H7C6.45,2,6,2.45,6,3c0,0.55,0.45,1,1,1c0,0,0,0,0,0l1,0v5 c0,1.66-1.34,3-3,3v2h5.97v7l1,1l1-1v-7H19v-2c0,0,0,0,0,0c-1.66,0-3-1.34-3-3V4l1,0c0,0,0,0,0,0c0.55,0,1-0.45,1-1 C18,2.45,17.55,2,17,2L17,2z"
                                                                     })
                                                                 })]
@@ -790,35 +783,35 @@
                                                     })]
                                                 })]
                                             })
-                                        }), Object(w.jsx)("div", {
+                                        }), Object(y.jsx)("div", {
                                             className: "carousel__items",
                                             children: t.children.length ? t.children.map((function(a) {
-                                                return Object(w.jsx)("div", {
-                                                    children: Object(w.jsxs)("figure", {
+                                                return Object(y.jsx)("div", {
+                                                    children: Object(y.jsxs)("figure", {
                                                         className: "carousel__item__figure",
-                                                        children: [Object(w.jsx)(c.b, {
+                                                        children: [Object(y.jsx)(c.b, {
                                                             to: "/view/".concat(a.id),
-                                                            children: Object(w.jsx)("img", {
+                                                            children: Object(y.jsx)("img", {
                                                                 src: a.posterPath || "".concat(l, "/api/v1/image/poster?text=").concat(a.title, "&extention=jpeg"),
                                                                 className: "carousel__item__poster",
                                                                 alt: a.title
                                                             }, Ne())
-                                                        }, Ne()), Object(w.jsx)(A.a, {
+                                                        }, Ne()), Object(y.jsx)(L.a, {
                                                             className: "carousel__item__title",
                                                             children: a.title
-                                                        }), Object(w.jsx)("div", {
+                                                        }), Object(y.jsx)("div", {
                                                             style: {
                                                                 display: "flex",
                                                                 justifyContent: "center"
                                                             },
-                                                            children: Object(w.jsx)(g.a, {
+                                                            children: Object(y.jsx)(g.a, {
                                                                 style: {
                                                                     padding: "2px"
                                                                 },
                                                                 onClick: function() {
                                                                     return e.handleStar(a, t)
                                                                 },
-                                                                children: Object(w.jsx)(te.a, {})
+                                                                children: Object(y.jsx)(te.a, {})
                                                             })
                                                         })]
                                                     }, Ne())
@@ -826,37 +819,37 @@
                                             })) : null
                                         })]
                                     }, Ne()) : null
-                                })) : null, o ? Object(w.jsxs)(L.a, {
+                                })) : null, o ? Object(y.jsxs)(R.a, {
                                     onClose: this.handleEditClose,
                                     "aria-labelledby": "simple-dialog-title",
                                     fullWidth: !0,
                                     maxWidth: "md",
                                     open: o || !1,
-                                    children: [Object(w.jsx)(M.a, {
+                                    children: [Object(y.jsx)(A.a, {
                                         id: "simple-dialog-title",
                                         children: s[a].categoryInfo.name
-                                    }), Object(w.jsx)(re.a, {
-                                        children: Object(w.jsxs)(ae.Container, {
+                                    }), Object(y.jsx)(re.a, {
+                                        children: Object(y.jsxs)(ae.Container, {
                                             dragHandleSelector: ".drag-handle",
                                             lockAxis: "y",
                                             onDrop: this.handleEditDrop,
                                             children: [s[a].children.map((function(e) {
                                                 var t = e.id,
                                                     a = e.title;
-                                                return Object(w.jsx)(ae.Draggable, {
-                                                    children: Object(w.jsxs)(ie.a, {
+                                                return Object(y.jsx)(ae.Draggable, {
+                                                    children: Object(y.jsxs)(ie.a, {
                                                         divider: !0,
-                                                        children: [Object(w.jsx)(se.a, {
+                                                        children: [Object(y.jsx)(se.a, {
                                                             primary: a
-                                                        }), Object(w.jsx)(ce.a, {
-                                                            children: Object(w.jsx)(oe.a, {
+                                                        }), Object(y.jsx)(ce.a, {
+                                                            children: Object(y.jsx)(oe.a, {
                                                                 className: "drag-handle",
-                                                                children: Object(w.jsx)(de.a, {})
+                                                                children: Object(y.jsx)(de.a, {})
                                                             })
                                                         })]
                                                     })
                                                 }, t)
-                                            })), Object(w.jsx)(R.a, {
+                                            })), Object(y.jsx)(M.a, {
                                                 variant: "contained",
                                                 color: "primary",
                                                 style: {
@@ -864,42 +857,42 @@
                                                     margin: "30px 0 15px 15px"
                                                 },
                                                 onClick: this.handleEditSave,
-                                                startIcon: Object(w.jsx)($.a, {}),
+                                                startIcon: Object(y.jsx)(Z.a, {}),
                                                 children: "Save"
                                             })]
                                         })
                                     })]
                                 }) : null]
-                            }) : Object(w.jsx)("div", {
+                            }) : Object(y.jsx)("div", {
                                 className: "Carousel",
-                                children: s.length ? s.map((function(e) {
-                                    return e.children.length || !n ? Object(w.jsxs)("div", {
+                                children: s.length ? s.map((function(e, t) {
+                                    return e.children.length || !n ? Object(y.jsxs)("div", {
                                         className: "carousel__category",
-                                        children: [Object(w.jsxs)("div", {
+                                        children: [Object(y.jsxs)("div", {
                                             style: {
                                                 display: "flex",
                                                 alignItems: "center",
                                                 justifyContent: "center"
                                             },
-                                            children: [Object(w.jsx)("div", {
+                                            children: [Object(y.jsx)("div", {
                                                 style: {
                                                     display: "flex",
                                                     flexShrink: "0"
                                                 },
-                                                children: Object(w.jsx)(c.b, {
+                                                children: Object(y.jsx)(c.b, {
                                                     id: "".concat(e.categoryInfo.name),
                                                     to: "Starred" == e.categoryInfo.type ? "/starred#".concat(e.categoryInfo.name) : "/browse/".concat(e.categoryInfo.name),
                                                     className: "carousel__category__title no_decoration_link",
                                                     children: e.categoryInfo.name
                                                 }, Ne())
-                                            }), r || i ? null : Object(w.jsx)("div", {
+                                            }), r || i ? null : Object(y.jsx)("div", {
                                                 style: {
                                                     width: "100%",
                                                     display: "flex",
                                                     justifyContent: "space-between"
                                                 }
                                             })]
-                                        }), Object(w.jsx)(z.a, {
+                                        }), Object(y.jsx)(z.a, {
                                             className: "sslider sslider-landscape p-2",
                                             navigation: !0,
                                             breakpoints: {
@@ -921,15 +914,15 @@
                                                 }
                                             },
                                             children: e.children.length ? e.children.map((function(e) {
-                                                return Object(w.jsx)(G.a, {
+                                                return Object(y.jsx)(H.a, {
                                                     className: "sslider-slide",
-                                                    children: Object(w.jsx)(c.b, {
+                                                    children: Object(y.jsx)(c.b, {
                                                         to: "/view/".concat("file" == e.type ? "m" : "tb", "/").concat(e.id),
-                                                        children: Object(w.jsxs)(ue.a, {
+                                                        children: Object(y.jsxs)(he.a, {
                                                             className: "show-hover-hidden",
-                                                            children: [Object(w.jsx)("div", {
+                                                            children: [Object(y.jsx)("div", {
                                                                 className: "card-img",
-                                                                children: Object(w.jsx)(ue.a.Image, {
+                                                                children: Object(y.jsx)(he.a.Image, {
                                                                     className: "collection-bg-image rounded",
                                                                     src: e.posterPath || "".concat(l, "/api/v1/image/poster?text=").concat(e.title, "&extention=jpeg"),
                                                                     onError: function(e) {
@@ -937,8 +930,8 @@
                                                                     },
                                                                     alt: e.title
                                                                 })
-                                                            }), Object(w.jsx)(ue.a.Caption, {
-                                                                children: Object(w.jsx)("h6", {
+                                                            }), Object(y.jsx)(he.a.Caption, {
+                                                                children: Object(y.jsx)("h6", {
                                                                     children: e.title
                                                                 })
                                                             })]
@@ -954,23 +947,23 @@
                     }]), a
                 }(r.Component),
                 fe = a(42),
-                ve = a.n(fe),
-                xe = function(e) {
+                xe = a.n(fe),
+                ve = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             auth: window.sessionStorage.getItem("auth") || window.localStorage.getItem("auth") || "0",
                             category: n.props.match.params.category,
-                            genre: ve.a.parse(n.props.location.search).genre || "",
+                            genre: xe.a.parse(n.props.location.search).genre || "",
                             isLoaded: !1,
                             metadata: {},
-                            page: parseInt(ve.a.parse(n.props.location.search).page) || 1,
-                            range: "".concat(void 0 === ve.a.parse(n.props.location.search).page ? "0:".concat(JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}").range || "60") : "".concat((parseInt(ve.a.parse(n.props.location.search).page) - 1) * parseInt(JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}").range || "60"), ":").concat(parseInt(ve.a.parse(n.props.location.search).page) * parseInt(JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}").range || "60"))),
+                            page: parseInt(xe.a.parse(n.props.location.search).page) || 1,
+                            range: "".concat(void 0 === xe.a.parse(n.props.location.search).page ? "0:".concat(JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}").range || "30") : "".concat((parseInt(xe.a.parse(n.props.location.search).page) - 1) * parseInt(JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}").range || "30"), ":").concat(parseInt(xe.a.parse(n.props.location.search).page) * parseInt(JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}").range || "30"))),
                             server: window.sessionStorage.getItem("server") || window.localStorage.getItem("server") || window.location.origin,
-                            sort: ve.a.parse(n.props.location.search).sort || "popularity-des",
+                            sort: xe.a.parse(n.props.location.search).sort || "",
                             ui_config: JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}")
                         }, n
                     }
@@ -993,7 +986,7 @@
                                 e.setState({
                                     isLoaded: !0,
                                     metadata: t.data.content,
-                                    pages: Math.ceil(t.data.content[0].length / parseInt(c.range || "60")) || 1
+                                    pages: Math.ceil(t.data.content[0].length / parseInt(c.range || "30")) || 1
                                 })
                             })).catch((function(t) {
                                 if (console.error(t), t.response) {
@@ -1020,11 +1013,11 @@
                                     })) : e.props.history.push("/logout")
                                 } else t.request && (o ? k.a.fire({
                                     title: "Error!",
-                                    text: "MeuDrive n\xe3o p\xf4de se comunicar com o servidor!",
+                                    text: "Drive could not communicate with the server! Is '".concat(o, "' the correct address?"),
                                     icon: "error",
-                                    confirmButtonText: "Sair",
+                                    confirmButtonText: "Logout",
                                     confirmButtonColor: Ft.palette.success.main,
-                                    cancelButtonText: "Tente Novamente",
+                                    cancelButtonText: "Retry",
                                     cancelButtonColor: Ft.palette.error.main,
                                     showCancelButton: !0
                                 }).then((function(t) {
@@ -1035,7 +1028,7 @@
                     }, {
                         key: "componentWillUnmount",
                         value: function() {
-                            ht()
+                            ut()
                         }
                     }, {
                         key: "render",
@@ -1048,14 +1041,14 @@
                                 o = e.pages,
                                 s = e.sort,
                                 c = e.ui_config;
-                            return a && ht({
-                                title: "".concat(c.title || "libDrive", " - ").concat(r[0].categoryInfo.name),
+                            return a && ut({
+                                title: "".concat(c.title || "Drive", " - ").concat(r[0].categoryInfo.name),
                                 description: "Browse ".concat(r[0].categoryInfo.name, " on ").concat(c.title || "libDrive", "!")
-                            }), a ? Object(w.jsxs)("div", {
+                            }), a ? Object(y.jsxs)("div", {
                                 className: "CategoryBrowse",
-                                children: [Object(w.jsx)(He, Object(n.a)({}, this.props)), Object(w.jsx)(Kt, {
+                                children: [Object(y.jsx)(Ge, Object(n.a)({}, this.props)), Object(y.jsx)(Kt, {
                                     metadata: r
-                                }), Object(w.jsx)(at, {
+                                }), Object(y.jsx)(at, {
                                     state: {
                                         genre: t,
                                         page: i,
@@ -1063,25 +1056,25 @@
                                         sort: s
                                     },
                                     props: this.props
-                                }), Object(w.jsx)(Ct, {
+                                }), Object(y.jsx)(Ct, {
                                     state: {
                                         genre: t,
                                         sort: s
                                     },
                                     props: this.props
-                                }), Object(w.jsx)(ke, {})]
-                            }) : Object(w.jsx)(Re, {})
+                                }), Object(y.jsx)(ke, {})]
+                            }) : Object(y.jsx)(Me, {})
                         }
                     }]), a
                 }(r.Component),
-                ye = a(301),
-                we = (a(233), function(e) {
+                we = a(302),
+                ye = (a(234), function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var r;
-                        return Object(h.a)(this, a), (r = t.call(this, e)).state = Object(n.a)({
+                        return Object(u.a)(this, a), (r = t.call(this, e)).state = Object(n.a)({
                             menuAnchor: !1
                         }, e.state), r
                     }
@@ -1090,17 +1083,17 @@
                         value: function() {
                             var e = this,
                                 t = this.state.metadata;
-                            return Object(w.jsxs)("div", {
-                                children: [Object(w.jsx)("h4", {
+                            return Object(y.jsxs)("div", {
+                                children: [Object(y.jsx)("h4", {
                                     children: "Temporadas"
-                                }), Object(w.jsx)("div", {
+                                }), Object(y.jsx)("div", {
                                     className: "season-container",
                                     children: t.children.length ? t.children.map((function(t) {
-                                        if ("directory" == t.type) return Object(w.jsx)(c.b, {
+                                        if ("directory" == t.type) return Object(y.jsx)(c.b, {
                                             to: "/view/ts/".concat(t.id, "?q=0"),
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)("h4", {
-                                                children: Object(w.jsx)(ye.a, {
+                                            children: Object(y.jsx)("h4", {
+                                                children: Object(y.jsx)(we.a, {
                                                     variant: "dark",
                                                     className: "season-single",
                                                     onClick: e.handleClose,
@@ -1120,31 +1113,34 @@
                     var t = Object(b.a)(a);
 
                     function a() {
-                        return Object(h.a)(this, a), t.apply(this, arguments)
+                        return Object(u.a)(this, a), t.apply(this, arguments)
                     }
                     return Object(p.a)(a, [{
                         key: "render",
                         value: function() {
                             var e = this.props.classes;
-                            return Object(w.jsx)("div", {
+                            return Object(y.jsx)("div", {
                                 style: {
                                     paddingTop: "75px"
                                 },
-                                children: Object(w.jsxs)("footer", {
+ //# NOT CHANGE THIS MODULE -  //# NOT CHANGE THIS MODULE -  //# NOT CHANGE THIS MODULE -  //# NOT CHANGE THIS MODULE -  //# NOT CHANGE THIS MODULE -  //# NOT CHANGE THIS MODULE -  //# NOT CHANGE THIS MODULE - 
+                               children: Object(y.jsxs)("footer", {
                                     className: e.footer__container,
                                     id: "footer__container",
-                                    children: [Object(w.jsx)("a", {
-                                        href: "#",
-                                        children: Object(w.jsx)("img", {
+                                    children: [Object(y.jsx)("a", {
+                                        href: "http://tiny.cc/libdrive",
+                                        target: "_blank",
+                                        children: Object(y.jsx)("img", {
                                             src: "/images/github.gif",
                                             className: "footer__github",
                                             height: "64px",
                                             alt: "github-logo"
                                         })
-                                    }), Object(w.jsx)("a", {
+                                    }), Object(y.jsx)("a", {
                                         className: "no_decoration_link footer__text",
-                                        href: "#",
-                                        children: "\xa9 2023.".concat(Gt.a, " - CineDrive")
+                                        href: "https://github.com/ss-iptv/render-drive",
+                                        target: "_blank",
+                                        children: "\xa9 2023. Drive Acervo v3.".concat(Ht.a, "")
                                     })]
                                 })
                             })
@@ -1153,6 +1149,7 @@
                 }(r.Component),
                 ke = Object(Se.a)((function(e) {
                     return {
+ //# NOT CHANGE THIS MODULE -  //# NOT CHANGE THIS MODULE -  //# NOT CHANGE THIS MODULE -  //# NOT CHANGE THIS MODULE -  //# NOT CHANGE THIS MODULE -  //# NOT CHANGE THIS MODULE -  //# NOT CHANGE THIS MODULE - 
                         footer__container: {
                             width: "100%",
                             height: "75px",
@@ -1171,15 +1168,15 @@
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             auth: window.sessionStorage.getItem("auth") || window.localStorage.getItem("auth") || "0",
-                            genre: ve.a.parse(n.props.location.search).genre || "",
+                            genre: xe.a.parse(n.props.location.search).genre || "",
                             isLoaded: !1,
                             metadata: {},
-                            page: parseInt(ve.a.parse(n.props.location.search).page) || 1,
-                            range: "".concat(void 0 === ve.a.parse(n.props.location.search).page ? "0:12" : "".concat(12 * (parseInt(ve.a.parse(n.props.location.search).page) - 1), ":").concat(12 * parseInt(ve.a.parse(n.props.location.search).page))),
+                            page: parseInt(xe.a.parse(n.props.location.search).page) || 1,
+                            range: "".concat(void 0 === xe.a.parse(n.props.location.search).page ? "0:12" : "".concat(12 * (parseInt(xe.a.parse(n.props.location.search).page) - 1), ":").concat(12 * parseInt(xe.a.parse(n.props.location.search).page))),
                             server: window.sessionStorage.getItem("server") || window.localStorage.getItem("server") || window.location.origin,
-                            sort: ve.a.parse(n.props.location.search).sort || "",
+                            sort: xe.a.parse(n.props.location.search).sort || "",
                             ui_config: JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}")
                         }, n
                     }
@@ -1227,11 +1224,11 @@
                                     })) : e.props.history.push("/logout")
                                 } else t.request && (i ? k.a.fire({
                                     title: "Error!",
-                                    text: "MeuDrive n\xe3o p\xf4de se comunicar com o servidor!",
+                                    text: "Drive could not communicate with the server! Is '".concat(i, "' the correct address?"),
                                     icon: "error",
-                                    confirmButtonText: "Sair",
+                                    confirmButtonText: "Logout",
                                     confirmButtonColor: Ft.palette.success.main,
-                                    cancelButtonText: "Tente Novamente",
+                                    cancelButtonText: "Retry",
                                     cancelButtonColor: Ft.palette.error.main,
                                     showCancelButton: !0
                                 }).then((function(t) {
@@ -1242,7 +1239,7 @@
                     }, {
                         key: "componentWillUnmount",
                         value: function() {
-                            ht()
+                            ut()
                         }
                     }, {
                         key: "render",
@@ -1255,14 +1252,14 @@
                                 o = e.pages,
                                 s = e.sort,
                                 c = e.ui_config;
-                            return a && ht({
+                            return a && ut({
                                 title: "".concat(c.title || "libDrive").concat(t ? " - ".concat(t) : ""),
                                 description: "Browse ".concat(t ? "the ".concat(t, " genre") : "genres", " on ").concat(c.title || "libDrive", "!")
-                            }), a ? Object(w.jsxs)("div", {
+                            }), a ? Object(y.jsxs)("div", {
                                 className: "CategoryBrowse",
-                                children: [Object(w.jsx)(He, Object(n.a)({}, this.props)), Object(w.jsx)(Kt, {
+                                children: [Object(y.jsx)(Ge, Object(n.a)({}, this.props)), Object(y.jsx)(Kt, {
                                     metadata: r
-                                }), Object(w.jsx)(at, {
+                                }), Object(y.jsx)(at, {
                                     state: {
                                         genre: t,
                                         page: i,
@@ -1270,14 +1267,14 @@
                                         sort: s
                                     },
                                     props: this.props
-                                }), Object(w.jsx)(Ct, {
+                                }), Object(y.jsx)(Ct, {
                                     state: {
                                         genre: t,
                                         sort: s
                                     },
                                     props: this.props
-                                }), Object(w.jsx)(ke, {})]
-                            }) : Object(w.jsx)(Re, {})
+                                }), Object(y.jsx)(ke, {})]
+                            }) : Object(y.jsx)(Me, {})
                         }
                     }]), a
                 }(r.Component);
@@ -1289,18 +1286,18 @@
                 }
                 return e() + e(!0) + e(!0) + e()
             }
-            var Ie = a(302),
-                Be = a(331),
+            var Ie = a(303),
+                Be = a(332),
                 Te = a(109),
                 De = a.n(Te),
-                Ee = a(322),
-                Ae = (a(234), function(e) {
+                Ee = a(323),
+                Le = (a(235), function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             auth: "",
                             error: "",
                             page: !1,
@@ -1367,10 +1364,10 @@
                                         confirmButtonText: "OK",
                                         confirmButtonColor: Ft.palette.success.main
                                     })
-                                } catch (a) {
+                                } catch (n) {
                                     k.a.fire({
                                         title: "Error!",
-                                        text: "Voc\xea n\xe3o conseguiu se comunicar com o servidor.",
+                                        text: "You were unable to communicate with the server. Are you sure ".concat(a, " is the correct server?"),
                                         icon: "error",
                                         confirmButtonText: "OK",
                                         confirmButtonColor: Ft.palette.success.main
@@ -1449,7 +1446,7 @@
                                 } catch (a) {
                                     k.a.fire({
                                         title: "Error!",
-                                        text: "Algo deu errado ao se comunicar com o servidor.",
+                                        text: "Something went wrong while communicating with the server ".concat(n),
                                         icon: "error",
                                         confirmButtonText: "OK",
                                         confirmButtonColor: Ft.palette.success.main
@@ -1490,76 +1487,76 @@
                                 r = e.server,
                                 i = e.username,
                                 o = this.props.classes;
-                            return n ? Object(w.jsxs)("div", {
+                            return n ? Object(y.jsxs)("div", {
                                 className: "Login-form",
-                                children: [Object(w.jsxs)(Ie.a, {
+                                children: [Object(y.jsxs)(Ie.a, {
                                     className: "Login-form-container",
                                     component: "main",
                                     maxWidth: "xs",
-                                    children: [Object(w.jsx)(d.a, {}), Object(w.jsxs)("div", {
+                                    children: [Object(y.jsx)(d.a, {}), Object(y.jsxs)("div", {
                                         className: o.paper,
-                                        children: [Object(w.jsx)(Be.a, {
+                                        children: [Object(y.jsx)(Be.a, {
                                             className: o.avatar,
-                                            children: Object(w.jsx)(De.a, {})
-                                        }), Object(w.jsx)(A.a, {
+                                            children: Object(y.jsx)(De.a, {})
+                                        }), Object(y.jsx)(L.a, {
                                             variant: "h5",
-                                            children: "Servidor - Entrar"
-                                        }), Object(w.jsxs)("form", {
+                                            children: "Sign in"
+                                        }), Object(y.jsxs)("form", {
                                             className: o.form,
                                             onSubmit: this.handleSubmit,
                                             noValidate: !0,
-                                            children: [t && Object(w.jsx)("div", {
+                                            children: [t && Object(y.jsx)("div", {
                                                 style: {},
-                                                children: Object(w.jsxs)("h3", {
+                                                children: Object(y.jsxs)("h3", {
                                                     "data-test": "error",
                                                     onClick: this.dismissError,
-                                                    children: [Object(w.jsx)("button", {
+                                                    children: [Object(y.jsx)("button", {
                                                         onClick: this.dismissError,
                                                         children: "\u2716"
                                                     }), t]
                                                 })
-                                            }), Object(w.jsxs)(Ee.a.Group, {
+                                            }), Object(y.jsxs)(Ee.a.Group, {
                                                 className: "mb-3",
-                                                children: [Object(w.jsx)(Ee.a.Label, {
+                                                children: [Object(y.jsx)(Ee.a.Label, {
                                                     children: "Server"
-                                                }), Object(w.jsx)(Ee.a.Control, {
+                                                }), Object(y.jsx)(Ee.a.Control, {
                                                     disabled: !0,
                                                     placeholder: r,
                                                     onChange: this.handleTempServerChange
                                                 })]
-                                            }), Object(w.jsxs)(Ee.a.Group, {
+                                            }), Object(y.jsxs)(Ee.a.Group, {
                                                 className: "mb-3",
-                                                children: [Object(w.jsx)(Ee.a.Label, {
+                                                children: [Object(y.jsx)(Ee.a.Label, {
                                                     children: "Username"
-                                                }), Object(w.jsx)(Ee.a.Control, {
+                                                }), Object(y.jsx)(Ee.a.Control, {
                                                     placeholder: "Username",
                                                     value: i,
                                                     onChange: this.handleUserChange
                                                 })]
-                                            }), Object(w.jsxs)(Ee.a.Group, {
+                                            }), Object(y.jsxs)(Ee.a.Group, {
                                                 className: "mb-3",
-                                                children: [Object(w.jsx)(Ee.a.Label, {
+                                                children: [Object(y.jsx)(Ee.a.Label, {
                                                     children: "Password"
-                                                }), Object(w.jsx)(Ee.a.Control, {
+                                                }), Object(y.jsx)(Ee.a.Control, {
                                                     type: "password",
                                                     placeholder: "Password",
                                                     value: a,
                                                     onChange: this.handlePassChange
                                                 })]
-                                            }), Object(w.jsx)(B.a, {
+                                            }), Object(y.jsx)(B.a, {
                                                 type: "submit",
                                                 style: {
                                                     width: "100%"
                                                 },
                                                 variant: "primary",
                                                 className: o.submit,
-                                                children: "Aviso: A Busca não está Funcionando"
-                                            }), this.state.signup ? Object(w.jsxs)("div", {
+                                                children: "Logar"
+                                            }), this.state.signup ? Object(y.jsxs)("div", {
                                                 className: "Signup",
                                                 style: {
                                                     textAlign: "center"
                                                 },
-                                                children: [Object(w.jsx)(B.a, {
+                                                children: [Object(y.jsx)(B.a, {
                                                     type: "button",
                                                     onClick: this.handleSignup,
                                                     fullWidth: !0,
@@ -1568,71 +1565,71 @@
                                                         marginTop: 0
                                                     },
                                                     className: o.submit,
-                                                    children: "Sign Up"
-                                                }), Object(w.jsx)(A.a, {
+                                                    children: "Criar Conta"
+                                                }), Object(y.jsx)(L.a, {
                                                     variant: "body1",
-                                                    children: "Be aware that the owner of this server can view your credentials!"
+                                                    children: "The authorship of this system's version is attributed to DSAraujo. Their contributions have significantly influenced its development, showcasing their expertise and dedication!"
                                                 })]
-                                            }) : Object(w.jsx)("div", {
+                                            }) : Object(y.jsx)("div", {
                                                 className: "Signup"
                                             })]
                                         })]
                                     })]
-                                }), Object(w.jsx)(ke, {})]
-                            }) : Object(w.jsxs)("div", {
+                                }), Object(y.jsx)(ke, {})]
+                            }) : Object(y.jsxs)("div", {
                                 className: "Login-form",
-                                children: [Object(w.jsxs)(Ie.a, {
+                                children: [Object(y.jsxs)(Ie.a, {
                                     className: "Login-form-container",
                                     component: "main",
                                     maxWidth: "xs",
-                                    children: [Object(w.jsx)(d.a, {}), Object(w.jsxs)("div", {
+                                    children: [Object(y.jsx)(d.a, {}), Object(y.jsxs)("div", {
                                         className: o.paper,
-                                        children: [Object(w.jsx)(Be.a, {
+                                        children: [Object(y.jsx)(Be.a, {
                                             className: o.avatar,
-                                            children: Object(w.jsx)(De.a, {})
-                                        }), Object(w.jsx)(A.a, {
+                                            children: Object(y.jsx)(De.a, {})
+                                        }), Object(y.jsx)(L.a, {
                                             variant: "h5",
-                                            children: "Servidor - Entrar"
-                                        }), Object(w.jsxs)("form", {
+                                            children: "Sign in"
+                                        }), Object(y.jsxs)("form", {
                                             className: o.form,
                                             onSubmit: this.handleServerSubmit,
                                             noValidate: !0,
-                                            children: [t && Object(w.jsx)("div", {
+                                            children: [t && Object(y.jsx)("div", {
                                                 style: {},
-                                                children: Object(w.jsxs)("h3", {
+                                                children: Object(y.jsxs)("h3", {
                                                     "data-test": "error",
                                                     onClick: this.dismissError,
-                                                    children: [Object(w.jsx)("button", {
+                                                    children: [Object(y.jsx)("button", {
                                                         onClick: this.dismissError,
                                                         children: "\u2716"
                                                     }), t]
                                                 })
-                                            }), Object(w.jsxs)(Ee.a.Group, {
+                                            }), Object(y.jsxs)(Ee.a.Group, {
                                                 className: "mb-3",
                                                 controlId: "exampleForm.ControlInput1",
-                                                children: [Object(w.jsx)(Ee.a.Label, {
-                                                    children: "Servidor"
-                                                }), Object(w.jsx)(Ee.a.Control, {
+                                                children: [Object(y.jsx)(Ee.a.Label, {
+                                                    children: "Server"
+                                                }), Object(y.jsx)(Ee.a.Control, {
                                                     placeholder: r,
                                                     onChange: this.handleTempServerChange
                                                 })]
-                                            }), Object(w.jsx)(B.a, {
+                                            }), Object(y.jsx)(B.a, {
                                                 style: {
                                                     width: "100%"
                                                 },
                                                 type: "submit",
                                                 variant: "primary",
                                                 className: o.submit,
-                                                children: "Iniciar"
+                                                children: "Next"
                                             })]
                                         })]
                                     })]
-                                }), Object(w.jsx)(ke, {})]
+                                }), Object(y.jsx)(ke, {})]
                             })
                         }
                     }]), a
                 }(r.Component)),
-                Le = Object(Se.a)((function(e) {
+                Re = Object(Se.a)((function(e) {
                     return {
                         paper: {
                             marginTop: e.spacing(8),
@@ -1654,24 +1651,24 @@
                     }
                 }), {
                     withTheme: !0
-                })(Ae),
-                Me = (a(235), function(e) {
+                })(Le),
+                Ae = (a(236), function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a() {
-                        return Object(h.a)(this, a), t.apply(this, arguments)
+                        return Object(u.a)(this, a), t.apply(this, arguments)
                     }
                     return Object(p.a)(a, [{
                         key: "render",
                         value: function() {
-                            return Object(w.jsx)("div", {
+                            return Object(y.jsx)("div", {
                                 className: "loader-container",
-                                children: Object(w.jsxs)("div", {
+                                children: Object(y.jsxs)("div", {
                                     className: "loader",
-                                    children: [Object(w.jsx)("div", {
+                                    children: [Object(y.jsx)("div", {
                                         className: "square one"
-                                    }), Object(w.jsx)("div", {
+                                    }), Object(y.jsx)("div", {
                                         className: "square two"
                                     })]
                                 })
@@ -1679,14 +1676,14 @@
                         }
                     }]), a
                 }(r.Component)),
-                Re = Me,
+                Me = Ae,
                 Pe = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             isLoaded: !1
                         }, n
                     }
@@ -1703,26 +1700,26 @@
                     }, {
                         key: "render",
                         value: function() {
-                            return this.state.isLoaded ? Object(w.jsx)(l.a, {
+                            return this.state.isLoaded ? Object(y.jsx)(l.a, {
                                 to: "/login"
-                            }, Ne()) : Object(w.jsx)(Re, {})
+                            }, Ne()) : Object(y.jsx)(Me, {})
                         }
                     }]), a
                 }(r.Component),
                 Ue = a(21),
-                qe = a(321),
-                Je = a(304),
-                Fe = a(324),
-                We = (a(236), a(319)),
-                Ve = a(180),
-                Ke = a.n(Ve),
+                Je = a(322),
+                qe = a(305),
+                Fe = a(325),
+                We = (a(237), a(180)),
+                Ve = a.n(We),
+                Ke = a(320),
                 ze = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             menuAnchor: !1,
                             ui_config: e.ui_config
                         }, n.handleClick = n.handleClick.bind(Object(m.a)(n)), n.handleClose = n.handleClose.bind(Object(m.a)(n)), n.handleTheme = n.handleTheme.bind(Object(m.a)(n)), n
@@ -1754,18 +1751,18 @@
                             var e = this,
                                 t = this.state;
                             t.menuAnchor, t.ui_config;
-                            return Object(w.jsx)("div", {
+                            return Object(y.jsx)("div", {
                                 className: "ThemeMenu",
-                                children: Object(w.jsxs)(We.a, {
-                                    children: [Object(w.jsx)(We.a.Toggle, {
+                                children: Object(y.jsxs)(Ke.a, {
+                                    children: [Object(y.jsx)(Ke.a.Toggle, {
                                         id: "dropdown-basic",
-                                        children: Object(w.jsx)(Ke.a, {})
-                                    }), Object(w.jsx)(We.a.Menu, {
-                                        children: Object(w.jsx)(We.a.Item, {
+                                        children: Object(y.jsx)(Ve.a, {})
+                                    }), Object(y.jsx)(Ke.a.Menu, {
+                                        children: Object(y.jsx)(Ke.a.Item, {
                                             onClick: function() {
                                                 return e.handleTheme("dark")
                                             },
-                                            children: "Dark"
+                                            children: "Escuro"
                                         })
                                     })]
                                 })
@@ -1773,13 +1770,13 @@
                         }
                     }]), a
                 }(r.Component),
-                Ge = function(e) {
+                He = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var r;
-                        return Object(h.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
+                        return Object(u.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
                             ui_config: JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}")
                         }), r.searchChange = r.searchChange.bind(Object(m.a)(r)), r.searchSubmit = r.searchSubmit.bind(Object(m.a)(r)), r.onMouseOver = r.onMouseOver.bind(Object(m.a)(r)), r.onMouseOut = r.onMouseOut.bind(Object(m.a)(r)), r
                     }
@@ -1816,46 +1813,50 @@
                                 a = e.categories,
                                 n = (e.query, e.search, e.ui_config);
                             this.props.classes;
-                            return Object(w.jsx)(qe.a, {
+                            return Object(y.jsx)(Je.a, {
                                 expand: "lg",
                                 variant: "dark",
-                                children: Object(w.jsxs)(Je.a, {
+                                children: Object(y.jsxs)(qe.a, {
                                     fluid: !0,
                                     className: "d-container",
-                                    children: [Object(w.jsx)(qe.a.Brand, {
+                                    children: [Object(y.jsxs)(Je.a.Brand, {
                                         as: c.b,
                                         to: "/",
-                                        children: Object(w.jsx)("img", {
+                                        children: [Object(y.jsx)("img", {
                                             src: je,
                                             width: "180",
                                             className: "logo-full d-inline-block align-top",
                                             alt: "Dester Logo-Full"
-                                        })
-                                    }), Object(w.jsx)(qe.a.Toggle, {
+                                        }), Object(y.jsx)(we.a, {
+                                            pill: !0,
+                                            bg: "primary",
+                                            children: "v3"
+                                        })]
+                                    }), Object(y.jsx)(Je.a.Toggle, {
                                         "aria-controls": "basic-navbar-nav"
-                                    }), Object(w.jsxs)(qe.a.Collapse, {
+                                    }), Object(y.jsxs)(Je.a.Collapse, {
                                         id: "basic-navbar-nav",
-                                        children: [Object(w.jsxs)(Fe.a, {
+                                        children: [Object(y.jsxs)(Fe.a, {
                                             className: "me-auto",
-                                            children: [Object(w.jsxs)(Fe.a.Link, {
+                                            children: [Object(y.jsxs)(Fe.a.Link, {
                                                 as: c.b,
                                                 to: "/",
-                                                children: [Object(w.jsx)("i", {
+                                                children: [Object(y.jsx)("i", {
                                                     className: "icon-navbar color-1 gg-home-alt"
-                                                }), "Inicio"]
-                                            }), Object(w.jsxs)(Fe.a.Link, {
+                                                }), "Home"]
+                                            }), Object(y.jsxs)(Fe.a.Link, {
                                                 as: c.b,
                                                 to: "/search",
-                                                children: [Object(w.jsx)("i", {
+                                                children: [Object(y.jsx)("i", {
                                                     className: "icon-navbar color-2 gg-search"
-                                                }), "Procurar"]
+                                                }), "Busca"]
                                             })]
-                                        }), Object(w.jsx)(T, {
+                                        }), Object(y.jsx)(T, {
                                             categories: a
-                                        }), Object(w.jsx)(S, {
+                                        }), Object(y.jsx)(S, {
                                             accounts: t,
                                             ui_config: n
-                                        }), Object(w.jsx)(ze, {
+                                        }), Object(y.jsx)(ze, {
                                             ui_config: n
                                         })]
                                     })]
@@ -1864,13 +1865,13 @@
                         }
                     }]), a
                 }(r.Component),
-                He = function(e) {
+                Ge = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             accounts: {},
                             auth: window.sessionStorage.getItem("auth") || window.localStorage.getItem("auth") || "0",
                             categories: [],
@@ -1905,16 +1906,16 @@
                                 t = e.accounts,
                                 a = e.categories,
                                 r = e.isLoaded;
-                            return r || r ? Object(w.jsx)("div", {
+                            return r || r ? Object(y.jsx)("div", {
                                 className: "Nav",
-                                children: Object(w.jsx)(Ge, Object(n.a)({
+                                children: Object(y.jsx)(He, Object(n.a)({
                                     state: {
                                         accounts: t,
                                         categories: a,
                                         query: this.props.query
                                     }
                                 }, this.props))
-                            }) : Object(w.jsx)(Ge, Object(n.a)({
+                            }) : Object(y.jsx)(He, Object(n.a)({
                                 state: {
                                     accounts: [],
                                     categories: [],
@@ -1924,27 +1925,27 @@
                         }
                     }]), a
                 }(r.Component),
-                Xe = a(305),
-                Ye = a(145),
-                Ze = a.n(Ye),
-                Qe = (r.Component, a(239), function(e) {
+                Ye = a(306),
+                Xe = a(145),
+                $e = a.n(Xe),
+                Qe = (r.Component, a(240), function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a() {
-                        return Object(h.a)(this, a), t.apply(this, arguments)
+                        return Object(u.a)(this, a), t.apply(this, arguments)
                     }
                     return Object(p.a)(a, [{
                         key: "render",
                         value: function() {
-                            return Object(w.jsxs)("div", {
+                            return Object(y.jsxs)("div", {
                                 className: "NotFound",
-                                children: [Object(w.jsx)(He, Object(n.a)({}, this.props)), Object(w.jsx)("div", {
+                                children: [Object(y.jsx)(Ge, Object(n.a)({}, this.props)), Object(y.jsx)("div", {
                                     className: "nf",
-                                    children: Object(w.jsx)("div", {
+                                    children: Object(y.jsx)("div", {
                                         className: "fof",
-                                        children: Object(w.jsx)("h1", {
-                                            children: "Error 404: Not Found"
+                                        children: Object(y.jsx)("h1", {
+                                            children: "Volta que deu Merda: Not Found"
                                         })
                                     })
                                 })]
@@ -1952,15 +1953,15 @@
                         }
                     }]), a
                 }(r.Component)),
-                $e = a(337),
-                et = a(327),
+                Ze = a(338),
+                et = a(328),
                 tt = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = e.state, n
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = e.state, n
                     }
                     return Object(p.a)(a, [{
                         key: "render",
@@ -1972,28 +1973,28 @@
                                 i = t.pages,
                                 o = t.sort,
                                 s = this.props.classes;
-                            return r > i ? Object(w.jsx)(l.a, {
+                            return r > i ? Object(y.jsx)(l.a, {
                                 to: {
                                     pathname: this.props.props.location.pathname,
                                     search: "?page=".concat(i, "&genre=").concat(a, "&sort=").concat(o)
                                 }
-                            }, Ne()) : Object(w.jsx)("div", {
+                            }, Ne()) : Object(y.jsx)("div", {
                                 className: s.root,
-                                children: Object(w.jsx)($e.a, {
+                                children: Object(y.jsx)(Ze.a, {
                                     page: r,
                                     count: i,
                                     variant: "outlined",
                                     size: window.innerWidth >= 600 ? "large" : window.innerWidth >= 390 ? "medium" : "small",
                                     color: "primary",
                                     renderItem: function(t) {
-                                        return t.page ? Object(w.jsx)(c.b, {
+                                        return t.page ? Object(y.jsx)(c.b, {
                                             to: {
                                                 pathname: e.props.props.location.pathname,
                                                 search: "?page=".concat(t.page, "&genre=").concat(a, "&sort=").concat(o)
                                             },
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(et.a, Object(n.a)({}, t))
-                                        }, Ne()) : Object(w.jsx)(et.a, Object(n.a)({}, t))
+                                            children: Object(y.jsx)(et.a, Object(n.a)({}, t))
+                                        }, Ne()) : Object(y.jsx)(et.a, Object(n.a)({}, t))
                                     }
                                 })
                             })
@@ -2020,7 +2021,7 @@
 
                     function a(e) {
                         var r;
-                        return Object(h.a)(this, a), (r = t.call(this, e)).state = Object(n.a)({
+                        return Object(u.a)(this, a), (r = t.call(this, e)).state = Object(n.a)({
                             menuAnchor: !1
                         }, e.state), r.handleClick = r.handleClick.bind(Object(m.a)(r)), r.handleClose = r.handleClose.bind(Object(m.a)(r)), r
                     }
@@ -2041,29 +2042,30 @@
                     }, {
                         key: "render",
                         value: function() {
-                            var e, t = this.state,
-                                a = t.auth,
-                                n = t.id,
-                                r = t.isAndroid,
-                                i = t.isIOS,
-                                o = t.metadata,
-                                s = t.server,
-                                c = new URL("".concat(s, "/api/v1/redirectdownload/").concat(encodeURIComponent(o.name), "?a=").concat(a, "&id=").concat(n));
-                            if (r) {
-                                var l = c.protocol.slice(0, -1);
-                                c.hash = "Intent;action=android.intent.action.VIEW;scheme=".concat(l, ";type=").concat(o.mimeType, ";S.title=").concat(encodeURIComponent(o.name), ";end"), c.protocol = "intent", e = c.toString()
-                            } else i && (c.host = "x-callback-url", c.port = "", c.pathname = "stream", c.search = "url=".concat(s, "/api/v1/redirectdownload/").concat(encodeURIComponent(o.name), "?a=").concat(a, "&id=").concat(n), c.protocol = "vlc-x-callback", e = c.toString());
-                            return Object(w.jsxs)("div", {
+                            var e, t = this,
+                                a = this.state,
+                                n = a.auth,
+                                r = a.id,
+                                i = a.isAndroid,
+                                o = a.isIOS,
+                                s = a.metadata,
+                                c = a.server,
+                                l = new URL("".concat(c, "/api/v1/redirectdownload/").concat(encodeURIComponent(s.name), "?a=").concat(n, "&id=").concat(r));
+                            if (i) {
+                                var d = l.protocol.slice(0, -1);
+                                l.hash = "Intent;action=android.intent.action.VIEW;scheme=".concat(d, ";type=").concat(s.mimeType, ";S.title=").concat(encodeURIComponent(s.name), ";end"), l.protocol = "intent", e = l.toString()
+                            } else o && (l.host = "x-callback-url", l.port = "", l.pathname = "stream", l.search = "url=".concat(c, "/api/v1/redirectdownload/").concat(encodeURIComponent(s.name), "?a=").concat(n, "&id=").concat(r), l.protocol = "vlc-x-callback", e = l.toString());
+                            return Object(y.jsxs)("div", {
                                 className: "info__button",
-                                children: [Object(w.jsxs)(B.a, {
+                                children: [Object(y.jsxs)(B.a, {
                                     variant: "primary",
                                     "aria-controls": "player-menu",
                                     "aria-haspopup": "true",
                                     onClick: this.handleClick,
-                                    children: [Object(w.jsx)("i", {
+                                    children: [Object(y.jsx)("i", {
                                         className: "bi bi-play-fill"
-                                    }), "Player Externo"]
-                                }), Object(w.jsxs)(O.a, {
+                                    }), "External Player"]
+                                }), Object(y.jsxs)(O.a, {
                                     id: "player-menu",
                                     anchorEl: this.state.menuAnchor,
                                     keepMounted: !0,
@@ -2077,25 +2079,30 @@
                                     },
                                     open: Boolean(this.state.menuAnchor),
                                     onClose: this.handleClose,
-                                    children: [r || i ? Object(w.jsxs)("div", {
-                                        children: [Object(w.jsx)("a", {
+                                    children: [i || o ? Object(y.jsxs)("div", {
+                                        children: [Object(y.jsx)("a", {
                                             href: e,
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
+                                            children: Object(y.jsx)(x.a, {
                                                 onClick: this.handleClose,
-                                                children: r ? "Player Android" : i ? "IOS selector" : null
+                                                children: i ? "Android" : o ? "IOS selector" : null
                                             })
-                                        }), Object(w.jsx)(f.a, {})]
-                                    }) : Object(w.jsx)("div", {
-                                        children: Object(w.jsx)("a", {
-                                            href: "vlc://".concat(s, "/api/v1/redirectdownload/").concat(encodeURIComponent(o.name), "?a=").concat(a, "&id=").concat(n),
+                                        }), Object(y.jsx)(f.a, {})]
+                                    }) : Object(y.jsx)("div", {
+                                        children: Object(y.jsx)("a", {
+                                            href: "potplayer://".concat(c, "/api/v1/redirectdownload/").concat(encodeURIComponent(s.name), "?a=").concat(n, "&id=").concat(r),
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
+                                            children: Object(y.jsx)(x.a, {
                                                 onClick: this.handleClose,
-                                                children: "VLC Player"
+                                                children: "PotPlayer"
                                             })
                                         })
-                                    }), Object(w.jsx)(f.a, {})]
+                                    }), Object(y.jsx)(f.a, {}), Object(y.jsx)(x.a, {
+                                        onClick: function() {
+                                            navigator.clipboard.writeText("".concat(c, "/api/v1/redirectdownload/").concat(encodeURIComponent(s.name), "?a=").concat(n, "&id=").concat(r)), t.handleClose()
+                                        },
+                                        children: "Copy URL"
+                                    })]
                                 })]
                             })
                         }
@@ -2107,20 +2114,27 @@
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = e.state, n.handleClick = n.handleClick.bind(Object(m.a)(n)), n
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = e.state, n.handleClick = n.handleClick.bind(Object(m.a)(n)), n
                     }
                     return Object(p.a)(a, [{
                         key: "handleClick",
                         value: function(e) {
                             for (var t = this.state, a = t.auth, n = t.metadata, r = t.server, i = "#EXTM3U\n#EXTENC: UTF-8\n#PLAYLIST: ".concat(n.name, "\n"), o = 0; o < n.children.length; o++) i += "#EXTINF:0, ".concat(n.children[o].name, "\n").concat(r, "/api/v1/redirectdownload/").concat(encodeURI(n.children[o].name), "?a=").concat(a, "&id=").concat(n.children[o].id, "\n");
                             var s = document.createElement("a");
-                            s.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(i)), s.setAttribute("download", "PlayList".concat(n.name, ".m3u8")), s.style.display = "true", document.body.appendChild(s), s.click(), document.body.removeChild(s)
+                            s.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(i)), s.setAttribute("download", "".concat(n.name, ".m3u8")), s.style.display = "none", document.body.appendChild(s), s.click(), document.body.removeChild(s)
                         }
                     }, {
                         key: "render",
                         value: function() {
-                            return Object(w.jsx)("div", {
-                                className: "info__button"
+                            return Object(y.jsx)("div", {
+                                className: "info__button",
+                                children: Object(y.jsxs)(B.a, {
+                                    variant: "primary",
+                                    onClick: this.handleClick,
+                                    children: [Object(y.jsx)("i", {
+                                        className: "bi bi-music-note-list"
+                                    }), "Playlist"]
+                                })
                             })
                         }
                     }]), a
@@ -2130,7 +2144,7 @@
                     var t = Object(b.a)(a);
 
                     function a() {
-                        return Object(h.a)(this, a), t.apply(this, arguments)
+                        return Object(u.a)(this, a), t.apply(this, arguments)
                     }
                     return Object(p.a)(a, [{
                         key: "componentDidUpdate",
@@ -2151,7 +2165,7 @@
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             auth: window.sessionStorage.getItem("auth") || window.localStorage.getItem("auth") || "0",
                             isLoaded: !1,
                             metadata: [],
@@ -2169,8 +2183,8 @@
                                 n = t.query,
                                 r = t.server,
                                 i = t.ui_config;
-                            a && r || this.props.history.push("/logout"), ht({
-                                title: "".concat(i.title || "libDrive", " - ").concat(n),
+                            a && r || this.props.history.push("/logout"), ut({
+                                title: "".concat(i.title || "Drive", " - ").concat(n),
                                 description: "Find ".concat(n, " on ").concat(i.title || "libDrive", "!")
                             });
                             var o = "".concat(r, "/api/v1/metadata"),
@@ -2205,11 +2219,11 @@
                                     })) : e.props.history.push("/logout")
                                 } else t.request && (r ? k.a.fire({
                                     title: "Error!",
-                                    text: "MeuDrive n\xe3o p\xf4de se comunicar com o servidor!",
+                                    text: "Drive could not communicate with the server! Is '".concat(r, "' the correct address?"),
                                     icon: "error",
-                                    confirmButtonText: "Sair",
+                                    confirmButtonText: "Logout",
                                     confirmButtonColor: Ft.palette.success.main,
-                                    cancelButtonText: "Tente Novamente",
+                                    cancelButtonText: "Retry",
                                     cancelButtonColor: Ft.palette.error.main,
                                     showCancelButton: !0
                                 }).then((function(t) {
@@ -2220,7 +2234,7 @@
                     }, {
                         key: "componentWillUnmount",
                         value: function() {
-                            ht()
+                            ut()
                         }
                     }, {
                         key: "render",
@@ -2229,27 +2243,27 @@
                                 t = e.isLoaded,
                                 a = e.metadata,
                                 r = e.query;
-                            return t ? Object(w.jsxs)("div", {
-                                className: "Search",
-                                children: [Object(w.jsx)(He, Object(n.a)(Object(n.a)({}, this.props), {}, {
+                            return t ? Object(y.jsxs)("div", {
+                                className: "Buscar",
+                                children: [Object(y.jsx)(Ge, Object(n.a)(Object(n.a)({}, this.props), {}, {
                                     query: r
-                                })), Object(w.jsx)(Oe, {
+                                })), Object(y.jsx)(Oe, {
                                     metadata: a,
                                     hide: !0
-                                }), Object(w.jsx)(ke, {})]
-                            }) : Object(w.jsx)(Re, {})
+                                }), Object(y.jsx)(ke, {})]
+                            }) : Object(y.jsx)(Me, {})
                         }
                     }]), a
                 }(r.Component),
-                ct = (a(24), a(306)),
+                ct = (a(24), a(307)),
                 lt = a(178),
-                dt = (a(240), function(e) {
+                dt = (a(241), function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var r;
-                        return Object(h.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
+                        return Object(u.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
                             ui_config: JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}")
                         }), r.searchChange = r.searchChange.bind(Object(m.a)(r)), r.searchSubmit = r.searchSubmit.bind(Object(m.a)(r)), r
                     }
@@ -2273,20 +2287,20 @@
                         value: function() {
                             var e = this.state;
                             e.accounts, e.categories, e.query, e.search, e.ui_config, this.props.classes;
-                            return Object(w.jsxs)("div", {
-                                children: [Object(w.jsx)(He, Object(n.a)({}, this.props)), Object(w.jsx)("div", {
+                            return Object(y.jsxs)("div", {
+                                children: [Object(y.jsx)(Ge, Object(n.a)({}, this.props)), Object(y.jsx)("div", {
                                     className: "search-wrapper",
-                                    children: Object(w.jsx)("form", {
+                                    children: Object(y.jsx)("form", {
                                         onSubmit: this.searchSubmit,
-                                        children: Object(w.jsxs)(ct.a, {
+                                        children: Object(y.jsxs)(ct.a, {
                                             className: "mb-3 sugoi-search-bar",
-                                            children: [Object(w.jsx)(ct.a.Text, {
+                                            children: [Object(y.jsx)(ct.a.Text, {
                                                 id: "inputGroup-sizing-default",
-                                                children: Object(w.jsx)("i", {
+                                                children: Object(y.jsx)("i", {
                                                     className: "color-2 gg-search"
                                                 })
-                                            }), Object(w.jsx)(lt.a, {
-                                                placeholder: "Procurar...",
+                                            }), Object(y.jsx)(lt.a, {
+                                                placeholder: "Buscar Títulos ...",
                                                 "aria-label": "Default",
                                                 "aria-describedby": "inputGroup-sizing-default",
                                                 onChange: this.searchChange
@@ -2298,13 +2312,13 @@
                         }
                     }]), a
                 }(r.Component)),
-                ut = function(e) {
+                ht = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             accounts: {},
                             auth: window.sessionStorage.getItem("auth") || window.localStorage.getItem("auth") || "0",
                             categories: [],
@@ -2339,16 +2353,16 @@
                                 t = e.accounts,
                                 a = e.categories,
                                 r = e.isLoaded;
-                            return r || r ? Object(w.jsx)("div", {
+                            return r || r ? Object(y.jsx)("div", {
                                 className: "Nav",
-                                children: Object(w.jsx)(dt, Object(n.a)({
+                                children: Object(y.jsx)(dt, Object(n.a)({
                                     state: {
                                         accounts: t,
                                         categories: a,
                                         query: this.props.query
                                     }
                                 }, this.props))
-                            }) : Object(w.jsx)(dt, Object(n.a)({
+                            }) : Object(y.jsx)(dt, Object(n.a)({
                                 state: {
                                     accounts: [],
                                     categories: [],
@@ -2359,20 +2373,20 @@
                     }]), a
                 }(r.Component);
 
-            function ht() {
+            function ut() {
                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                     t = JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}");
-                e.title = e.title || t.title || "libDrive", e.description = e.description || "libDrive is a Google Drive media library manager and indexer, similar to Plex, that organizes Google Drive media to offer an intuitive and user-friendly experience.", e.image = e.image || t.icon || "/images/icons/icon-512x512.png", e.type = e.type || "website", document.title = e.title || t.title, document.querySelector('meta[property="og:title"]').setAttribute("content", e.title), document.querySelector('meta[name="description"]').setAttribute("content", e.description), document.querySelector('meta[property="og:description"]').setAttribute("content", e.description), document.querySelector('meta[property="og:image"]').setAttribute("content", e.image), document.querySelector('meta[property="og:type"]').setAttribute("content", e.type)
+                e.title = e.title || t.title || "libDrive", e.description = e.description || "O CineClick by araujo é um gerenciador e indexador de biblioteca de mídia do Google Drive, similar ao Plex, que organiza a mídia do Google Drive para oferecer uma experiência intuitiva e amigável ao usuário.", e.image = e.image || t.icon || "/images/icons/icon-512x512.png", e.type = e.type || "website", document.title = e.title || t.title, document.querySelector('meta[property="og:title"]').setAttribute("content", e.title), document.querySelector('meta[name="description"]').setAttribute("content", e.description), document.querySelector('meta[property="og:description"]').setAttribute("content", e.description), document.querySelector('meta[property="og:image"]').setAttribute("content", e.image), document.querySelector('meta[property="og:type"]').setAttribute("content", e.type)
             }
-            var pt, mt, jt = a(332),
-                bt = a(335),
+            var pt, mt, jt = a(333),
+                bt = a(336),
                 gt = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             auth: window.sessionStorage.getItem("auth") || window.localStorage.getItem("auth") || "0",
                             error: "",
                             isLoaded: !1,
@@ -2424,11 +2438,11 @@
                                         })) : e.props.history.push("/logout")
                                     } else t.request && (r ? k.a.fire({
                                         title: "Error!",
-                                        text: "MeuDrive n\xe3o p\xf4de se comunicar com o servidor!",
+                                        text: "Drive could not communicate with the server! Is '".concat(r, "' the correct address?"),
                                         icon: "error",
-                                        confirmButtonText: "Sair",
+                                        confirmButtonText: "Logout",
                                         confirmButtonColor: Ft.palette.success.main,
-                                        cancelButtonText: "Tente Novamente",
+                                        cancelButtonText: "Retry",
                                         cancelButtonColor: Ft.palette.error.main,
                                         showCancelButton: !0
                                     }).then((function(t) {
@@ -2464,7 +2478,7 @@
                             })).catch((function(e) {
                                 console.error(e), k.a.fire({
                                     title: "Success!",
-                                    text: "MeuDrive est\xe1 sendo reiniciado, isso pode levar algum tempo, ent\xe3o o aplicativo n\xe3o ser\xe1 carregado",
+                                    text: "libDrive is being restarted, this might take some time, so the app won't load",
                                     icon: "success",
                                     confirmButtonText: "OK",
                                     confirmButtonColor: Ft.palette.success.main
@@ -2514,7 +2528,7 @@
                                     }))
                                 } else e.request && k.a.fire({
                                     title: "Error!",
-                                    text: "MeuDrive n\xe3o p\xf4de se comunicar com o servidor!",
+                                    text: "Drive could not communicate with the server! Is ".concat(r, " the correct address?"),
                                     icon: "error",
                                     confirmButtonText: "Logout",
                                     confirmButtonColor: Ft.palette.success.main,
@@ -2569,7 +2583,7 @@
                                     e.isConfirmed && t.props.history.push("/logout")
                                 })) : k.a.fire({
                                     title: "Error!",
-                                    text: "Algo deu errado durante a comunica\xe7\xe3o com o servidor!",
+                                    text: "Something went wrong while communicating with the server!",
                                     icon: "error",
                                     confirmButtonText: "Logout",
                                     confirmButtonColor: Ft.palette.success.main,
@@ -2580,7 +2594,7 @@
                                     e.isConfirmed ? t.props.history.push("/logout") : e.isDismissed && location.reload()
                                 })) : e.request && k.a.fire({
                                     title: "Error!",
-                                    text: "MeuDrive n\xe3o p\xf4de se comunicar com o servidor!",
+                                    text: "Drive could not communicate with the server! Is ".concat(r, " the correct address?"),
                                     icon: "error",
                                     confirmButtonText: "Logout",
                                     confirmButtonColor: Ft.palette.success.main,
@@ -2608,16 +2622,16 @@
                                 a = e.isLoaded,
                                 r = e.navProps,
                                 i = this.props.classes;
-                            return a ? Object(w.jsxs)("div", {
+                            return a ? Object(y.jsxs)("div", {
                                 className: "Settings",
-                                children: [Object(w.jsx)(He, Object(n.a)({}, r)), Object(w.jsx)("div", {
+                                children: [Object(y.jsx)(Ge, Object(n.a)({}, r)), Object(y.jsx)("div", {
                                     style: {
                                         margin: "auto",
                                         marginTop: "50px",
                                         width: "80vw",
                                         maxWidth: "1500px"
                                     },
-                                    children: Object(w.jsx)(jt.a, {
+                                    children: Object(y.jsx)(jt.a, {
                                         style: {
                                             width: "100%",
                                             backgroundColor: Ft.palette.background.paper
@@ -2631,16 +2645,16 @@
                                         minRows: 15,
                                         maxRows: 30
                                     })
-                                }), Object(w.jsx)("form", {
+                                }), Object(y.jsx)("form", {
                                     className: i.Form,
                                     noValidate: !0,
                                     autoComplete: "off",
                                     onSubmit: this.handleSubmit,
-                                    children: Object(w.jsxs)("div", {
+                                    children: Object(y.jsxs)("div", {
                                         style: {
                                             margin: "30px"
                                         },
-                                        children: [Object(w.jsx)(R.a, {
+                                        children: [Object(y.jsx)(M.a, {
                                             style: {
                                                 margin: "10px",
                                                 width: "175px"
@@ -2650,8 +2664,8 @@
                                             variant: "contained",
                                             color: "primary",
                                             className: i.submit,
-                                            children: "Enviar configura\xe7\xe3o"
-                                        }), Object(w.jsx)(R.a, {
+                                            children: "Submit Config"
+                                        }), Object(y.jsx)(M.a, {
                                             style: {
                                                 margin: "10px",
                                                 width: "175px"
@@ -2661,8 +2675,8 @@
                                             color: "primary",
                                             className: i.submit,
                                             onClick: this.handleRestart,
-                                            children: "Reiniciar servidor"
-                                        }), Object(w.jsx)(R.a, {
+                                            children: "Restart Server"
+                                        }), Object(y.jsx)(M.a, {
                                             style: {
                                                 margin: "10px",
                                                 width: "175px"
@@ -2672,8 +2686,8 @@
                                             color: "primary",
                                             className: i.submit,
                                             onClick: this.handleRebuild,
-                                            children: "Reconstruir metadados"
-                                        }), Object(w.jsx)(R.a, {
+                                            children: "Rebuild Metadata"
+                                        }), Object(y.jsx)(M.a, {
                                             style: {
                                                 margin: "10px",
                                                 width: "175px"
@@ -2683,15 +2697,15 @@
                                             color: "primary",
                                             className: i.submit,
                                             onClick: this.handleFileBrowser,
-                                            children: "Navegador de arquivos"
-                                        }), Object(w.jsx)("br", {}), Object(w.jsx)("p", {
+                                            children: "File Browser"
+                                        }), Object(y.jsx)("br", {}), Object(y.jsx)("p", {
                                             style: {
                                                 fontSize: "16px",
                                                 marginTop: "10px",
                                                 marginBotoom: "5px"
                                             },
                                             children: "Kill Switch"
-                                        }), Object(w.jsx)(bt.a, {
+                                        }), Object(y.jsx)(bt.a, {
                                             checked: this.state.config.kill_switch,
                                             onChange: this.handleKillSwitch,
                                             color: "primary",
@@ -2701,8 +2715,8 @@
                                             }
                                         })]
                                     })
-                                }), Object(w.jsx)(ke, {})]
-                            }) : Object(w.jsx)(Re, {})
+                                }), Object(y.jsx)(ke, {})]
+                            }) : Object(y.jsx)(Me, {})
                         }
                     }]), a
                 }(r.Component),
@@ -2733,7 +2747,7 @@
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             auth: window.sessionStorage.getItem("auth") || window.localStorage.getItem("auth") || "0",
                             isLoaded: !1,
                             secret: "",
@@ -2781,7 +2795,7 @@
                                     }))
                                 } else e.request && k.a.fire({
                                     title: "Error!",
-                                    text: "MeuDrive n\xe3o p\xf4de se comunicar com o servidor. ",
+                                    text: "Drive could not communicate with the server. Is ${server} the correct address?",
                                     icon: "error",
                                     confirmButtonText: "Logout",
                                     confirmButtonColor: Ft.palette.success.main,
@@ -2808,24 +2822,24 @@
                                 a = e.navProps,
                                 r = e.secret,
                                 i = this.props.classes;
-                            return t ? Object(w.jsxs)("div", {
+                            return t ? Object(y.jsxs)("div", {
                                 className: "SettingsLoginForm",
-                                children: [Object(w.jsx)(He, Object(n.a)({}, a)), Object(w.jsxs)(Ie.a, {
+                                children: [Object(y.jsx)(Ge, Object(n.a)({}, a)), Object(y.jsxs)(Ie.a, {
                                     component: "main",
                                     maxWidth: "xs",
-                                    children: [Object(w.jsx)(d.a, {}), Object(w.jsxs)("div", {
+                                    children: [Object(y.jsx)(d.a, {}), Object(y.jsxs)("div", {
                                         className: i.paper,
-                                        children: [Object(w.jsx)(Be.a, {
+                                        children: [Object(y.jsx)(Be.a, {
                                             className: i.avatar,
-                                            children: Object(w.jsx)(De.a, {})
-                                        }), Object(w.jsx)(A.a, {
+                                            children: Object(y.jsx)(De.a, {})
+                                        }), Object(y.jsx)(L.a, {
                                             variant: "h5",
-                                            children: "Configura\xe7\xf5es - Acesso Admin"
-                                        }), Object(w.jsxs)("form", {
+                                            children: "Settings Login"
+                                        }), Object(y.jsxs)("form", {
                                             className: i.form,
                                             onSubmit: this.handleSubmit,
                                             noValidate: !0,
-                                            children: [Object(w.jsx)(jt.a, {
+                                            children: [Object(y.jsx)(jt.a, {
                                                 variant: "outlined",
                                                 margin: "normal",
                                                 fullWidth: !0,
@@ -2838,22 +2852,22 @@
                                                 value: r,
                                                 required: !0,
                                                 autoFocus: !0
-                                            }), Object(w.jsx)(R.a, {
+                                            }), Object(y.jsx)(M.a, {
                                                 type: "submit",
                                                 fullWidth: !0,
                                                 variant: "contained",
                                                 color: "primary",
                                                 className: i.submit,
-                                                children: "Entrar"
+                                                children: "Logar"
                                             })]
                                         })]
                                     })]
-                                }), Object(w.jsx)(ke, {})]
-                            }) : Object(w.jsx)(Re, {})
+                                }), Object(y.jsx)(ke, {})]
+                            }) : Object(y.jsx)(Me, {})
                         }
                     }]), a
                 }(r.Component),
-                vt = Object(Se.a)((function(e) {
+                xt = Object(Se.a)((function(e) {
                     return {
                         paper: {
                             marginTop: e.spacing(8),
@@ -2876,16 +2890,16 @@
                 }), {
                     withTheme: !0
                 })(ft),
-                xt = a(309),
-                yt = a(334),
-                wt = a(326),
-                St = (a(241), function(e) {
+                vt = a(310),
+                wt = a(335),
+                yt = a(327),
+                St = (a(242), function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = e.state, n.formatSort = n.formatSort.bind(Object(m.a)(n)), n
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = e.state, n.formatSort = n.formatSort.bind(Object(m.a)(n)), n
                     }
                     return Object(p.a)(a, [{
                         key: "formatSort",
@@ -2901,130 +2915,130 @@
                                 t = this.state,
                                 a = t.genre,
                                 n = t.sort;
-                            return Object(w.jsxs)("div", {
+                            return Object(y.jsxs)("div", {
                                 className: "SortMenu",
-                                children: [Object(w.jsxs)(xt.a, {
+                                children: [Object(y.jsxs)(vt.a, {
                                     variant: "outlined",
                                     className: "sort__container",
-                                    children: [Object(w.jsx)(yt.a, {
+                                    children: [Object(y.jsx)(wt.a, {
                                         id: "sort-menu-label",
                                         children: this.formatSort(n) || "Sort"
-                                    }), Object(w.jsxs)(wt.a, {
+                                    }), Object(y.jsxs)(yt.a, {
                                         labelId: "sort-menu-label",
                                         id: "sort-menu",
                                         value: "",
                                         label: this.formatSort(n) || "Sort",
-                                        children: [Object(w.jsx)(c.b, {
+                                        children: [Object(y.jsx)(c.b, {
                                             to: {
                                                 pathname: this.props.props.location.pathname,
                                                 search: "?sort=alphabet-asc&genre=".concat(a)
                                             },
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
-                                                children: "Alfabeto A-Z"
+                                            children: Object(y.jsx)(x.a, {
+                                                children: "Alphabet Ascending"
                                             })
-                                        }, Ne()), Object(w.jsx)(c.b, {
+                                        }, Ne()), Object(y.jsx)(c.b, {
                                             to: {
                                                 pathname: this.props.props.location.pathname,
                                                 search: "?sort=alphabet-des&genre=".concat(a)
                                             },
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
-                                                children: "Alfabeto Z-A"
+                                            children: Object(y.jsx)(x.a, {
+                                                children: "Alphabet Descending"
                                             })
-                                        }, Ne()), Object(w.jsx)(c.b, {
+                                        }, Ne()), Object(y.jsx)(c.b, {
                                             to: {
                                                 pathname: this.props.props.location.pathname,
                                                 search: "?sort=date-asc&genre=".concat(a)
                                             },
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
-                                                children: "Data Crescente"
+                                            children: Object(y.jsx)(x.a, {
+                                                children: "Date Ascending"
                                             })
-                                        }, Ne()), Object(w.jsx)(c.b, {
+                                        }, Ne()), Object(y.jsx)(c.b, {
                                             to: {
                                                 pathname: this.props.props.location.pathname,
                                                 search: "?sort=date-des&genre=".concat(a)
                                             },
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
-                                                children: "Data Decrescente"
+                                            children: Object(y.jsx)(x.a, {
+                                                children: "Date Descending"
                                             })
-                                        }, Ne()), Object(w.jsx)(c.b, {
+                                        }, Ne()), Object(y.jsx)(c.b, {
                                             to: {
                                                 pathname: this.props.props.location.pathname,
                                                 search: "?sort=popularity-asc&genre=".concat(a)
                                             },
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
-                                                children: "Populares Crescente"
+                                            children: Object(y.jsx)(x.a, {
+                                                children: "Popularity Ascending"
                                             })
-                                        }, Ne()), Object(w.jsx)(c.b, {
+                                        }, Ne()), Object(y.jsx)(c.b, {
                                             to: {
                                                 pathname: this.props.props.location.pathname,
                                                 search: "?sort=popularity-des&genre=".concat(a)
                                             },
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
-                                                children: "Populares Decrescente"
+                                            children: Object(y.jsx)(x.a, {
+                                                children: "Popularity Descending"
                                             })
-                                        }, Ne()), Object(w.jsx)(c.b, {
+                                        }, Ne()), Object(y.jsx)(c.b, {
                                             to: {
                                                 pathname: this.props.props.location.pathname,
                                                 search: "?sort=vote-asc&genre=".concat(a)
                                             },
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
-                                                children: "+ Votado Crescente"
+                                            children: Object(y.jsx)(x.a, {
+                                                children: "Vote Ascending"
                                             })
-                                        }, Ne()), Object(w.jsx)(c.b, {
+                                        }, Ne()), Object(y.jsx)(c.b, {
                                             to: {
                                                 pathname: this.props.props.location.pathname,
                                                 search: "?sort=vote-des&genre=".concat(a)
                                             },
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
-                                                children: "+ Votado Decrescente"
+                                            children: Object(y.jsx)(x.a, {
+                                                children: "Vote Descending"
                                             })
-                                        }, Ne()), Object(w.jsx)(c.b, {
+                                        }, Ne()), Object(y.jsx)(c.b, {
                                             to: {
                                                 pathname: this.props.props.location.pathname,
                                                 search: "?sort=random&genre=".concat(a)
                                             },
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
-                                                children: "Aleat\xf3rio"
+                                            children: Object(y.jsx)(x.a, {
+                                                children: "Random"
                                             })
                                         }, Ne())]
                                     })]
-                                }), Object(w.jsxs)(xt.a, {
+                                }), Object(y.jsxs)(vt.a, {
                                     variant: "outlined",
                                     className: "sort__container",
-                                    children: [Object(w.jsx)(yt.a, {
+                                    children: [Object(y.jsx)(wt.a, {
                                         id: "genre-menu-label",
                                         children: a || "Genre"
-                                    }), Object(w.jsxs)(wt.a, {
+                                    }), Object(y.jsxs)(yt.a, {
                                         labelId: "genre-menu-label",
                                         id: "genre-menu",
                                         value: "",
                                         label: a || "Genre",
-                                        children: [Object(w.jsx)(c.b, {
+                                        children: [Object(y.jsx)(c.b, {
                                             to: {
                                                 pathname: this.props.props.location.pathname,
                                                 search: ""
                                             },
                                             className: "no_decoration_link",
-                                            children: Object(w.jsx)(v.a, {
-                                                children: "Todos"
+                                            children: Object(y.jsx)(x.a, {
+                                                children: "All"
                                             })
-                                        }, Ne()), Object(w.jsx)(f.a, {}), ["Action", "Action & Adventure", "Adventure", "Animation", "Comedy", "Crime", "Documentary", "Drama", "Ecchi", "Family", "Fantasy", "Hentai", "History", "Horror", "Kids", "Mahou Shoujo", "Mecha", "Music", "Mystery", "News", "Psychological", "Reality", "Romance", "Sci-Fi", "Sci-Fi & Fantasy", "Science Fiction", "Slice of Life", "Soap", "Sports", "Supernatural", "TV Movie", "Talk", "Thriller", "War", "War & Politics", "Western"].map((function(t) {
-                                            return Object(w.jsx)(c.b, {
+                                        }, Ne()), Object(y.jsx)(f.a, {}), ["Action", "Action & Adventure", "Adventure", "Animation", "Comedy", "Crime", "Documentary", "Drama", "Ecchi", "Family", "Fantasy", "Hentai", "History", "Horror", "Kids", "Mahou Shoujo", "Mecha", "Music", "Mystery", "News", "Psychological", "Reality", "Romance", "Sci-Fi", "Sci-Fi & Fantasy", "Science Fiction", "Slice of Life", "Soap", "Sports", "Supernatural", "TV Movie", "Talk", "Thriller", "War", "War & Politics", "Western"].map((function(t) {
+                                            return Object(y.jsx)(c.b, {
                                                 to: {
                                                     pathname: e.props.props.location.pathname,
                                                     search: "?sort=".concat(n, "&genre=").concat(t)
                                                 },
                                                 className: "no_decoration_link",
-                                                children: Object(w.jsx)(v.a, {
+                                                children: Object(y.jsx)(x.a, {
                                                     children: t
                                                 })
                                             }, Ne())
@@ -3038,21 +3052,21 @@
                 Ct = Object(Se.a)({
                     withTheme: !0
                 })(St),
-                kt = a(310),
-                _t = a(311),
-                Nt = a(312),
-                It = a(313),
+                kt = a(311),
+                _t = a(312),
+                Nt = a(313),
+                It = a(314),
                 Bt = a(181),
                 Tt = a.n(Bt),
                 Dt = a(182),
                 Et = a.n(Dt),
-                At = function(e) {
+                Lt = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var r;
-                        return Object(h.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
+                        return Object(u.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
                             isCreateOpen: !1
                         }), r.handleCreateClose = r.handleCreateClose.bind(Object(m.a)(r)), r.handleCreateChange = r.handleCreateChange.bind(Object(m.a)(r)), r.handleCreateSubmit = r.handleCreateSubmit.bind(Object(m.a)(r)), r.handleListItemClick = r.handleListItemClick.bind(Object(m.a)(r)), r
                     }
@@ -3090,17 +3104,17 @@
                                 };
                                 t.push(a), window.localStorage.setItem("starred_lists", JSON.stringify(t)), this.setState({
                                     isCreateOpen: !1,
-                                    starred_lists: t
+                                    starred_lists: true
                                 })
                             } else this.setState({
-                                isCreateOpen: !1
+                                isCreateOpen: true
                             })
                         }
                     }, {
                         key: "handleListItemClick",
                         value: function(e, t) {
                             if ("createStarredList" == e && -1 == t) this.setState({
-                                isCreateOpen: !0
+                                isCreateOpen: true
                             });
                             else {
                                 var a = this.props.metadata,
@@ -3121,60 +3135,60 @@
                                 n = t.metadata,
                                 r = this.state.isCreateOpen,
                                 i = JSON.parse(window.localStorage.getItem("starred_lists") || "[]");
-                            return Object(w.jsxs)("div", {
-                                children: [Object(w.jsxs)(L.a, {
+                            return Object(y.jsxs)("div", {
+                                children: [Object(y.jsxs)(R.a, {
                                     onClose: this.props.handleClose,
                                     "aria-labelledby": "simple-dialog-title",
                                     open: a,
-                                    children: [Object(w.jsx)(M.a, {
+                                    children: [Object(y.jsx)(A.a, {
                                         id: "simple-dialog-title",
                                         children: "Select starred list"
-                                    }), Object(w.jsxs)(re.a, {
+                                    }), Object(y.jsxs)(re.a, {
                                         children: [i && i.length ? i.map((function(t, a) {
-                                            return Object(w.jsxs)(ie.a, {
+                                            return Object(y.jsxs)(ie.a, {
                                                 button: !0,
                                                 onClick: function() {
                                                     return e.handleListItemClick(t, a)
                                                 },
-                                                children: [Object(w.jsx)(kt.a, {
-                                                    children: Object(w.jsx)(Be.a, {
+                                                children: [Object(y.jsx)(kt.a, {
+                                                    children: Object(y.jsx)(Be.a, {
                                                         style: t.children.some((function(e) {
                                                             return e.id == n.id
                                                         })) ? {
                                                             backgroundColor: Ft.palette.success.main
                                                         } : null,
-                                                        children: Object(w.jsx)(Tt.a, {})
+                                                        children: Object(y.jsx)(Tt.a, {})
                                                     })
-                                                }), Object(w.jsx)(se.a, {
+                                                }), Object(y.jsx)(se.a, {
                                                     primary: t.name
                                                 })]
                                             }, t.name)
-                                        })) : null, Object(w.jsx)("br", {}), Object(w.jsxs)(ie.a, {
+                                        })) : null, Object(y.jsx)("br", {}), Object(y.jsxs)(ie.a, {
                                             autoFocus: !0,
                                             button: !0,
                                             onClick: function() {
                                                 return e.handleListItemClick("createStarredList", -1)
                                             },
-                                            children: [Object(w.jsx)(kt.a, {
-                                                children: Object(w.jsx)(Be.a, {
-                                                    children: Object(w.jsx)(Et.a, {})
+                                            children: [Object(y.jsx)(kt.a, {
+                                                children: Object(y.jsx)(Be.a, {
+                                                    children: Object(y.jsx)(Et.a, {})
                                                 })
-                                            }), Object(w.jsx)(se.a, {
+                                            }), Object(y.jsx)(se.a, {
                                                 primary: "Create starred list"
                                             })]
                                         })]
                                     })]
-                                }), Object(w.jsxs)(L.a, {
+                                }), Object(y.jsxs)(R.a, {
                                     open: r,
                                     onClose: this.handleCreateClose,
                                     "aria-labelledby": "form-dialog-title",
-                                    children: [Object(w.jsx)(M.a, {
+                                    children: [Object(y.jsx)(A.a, {
                                         id: "form-dialog-title",
                                         children: "Create starred list"
-                                    }), Object(w.jsxs)(_t.a, {
-                                        children: [Object(w.jsx)(Nt.a, {
+                                    }), Object(y.jsxs)(_t.a, {
+                                        children: [Object(y.jsx)(Nt.a, {
                                             children: "Enter the starred list's name in the form below."
-                                        }), Object(w.jsx)(jt.a, {
+                                        }), Object(y.jsx)(jt.a, {
                                             autoFocus: !0,
                                             margin: "dense",
                                             id: "name",
@@ -3183,12 +3197,12 @@
                                             onChange: this.handleCreateChange,
                                             fullWidth: !0
                                         })]
-                                    }), Object(w.jsxs)(It.a, {
-                                        children: [Object(w.jsx)(R.a, {
+                                    }), Object(y.jsxs)(It.a, {
+                                        children: [Object(y.jsx)(M.a, {
                                             onClick: this.handleCreateClose,
                                             color: "primary",
                                             children: "Cancel"
-                                        }), Object(w.jsx)(R.a, {
+                                        }), Object(y.jsx)(M.a, {
                                             onClick: this.handleCreateSubmit,
                                             color: "primary",
                                             children: "Create"
@@ -3199,13 +3213,13 @@
                         }
                     }]), a
                 }(r.Component),
-                Lt = function(e) {
+                Rt = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             starred_lists: JSON.parse(window.localStorage.getItem("starred_lists") || "[]")
                         }, n
                     }
@@ -3213,18 +3227,18 @@
                         key: "render",
                         value: function() {
                             var e = this.state.starred_lists;
-                            return Object(w.jsxs)("div", {
+                            return Object(y.jsxs)("div", {
                                 className: "StarredLists",
-                                children: [Object(w.jsx)(He, Object(n.a)({}, this.props)), Object(w.jsx)(Oe, {
+                                children: [Object(y.jsx)(Ge, Object(n.a)({}, this.props)), Object(y.jsx)(Oe, {
                                     metadata: e,
                                     star: !0
-                                }), Object(w.jsx)(ke, {})]
+                                }), Object(y.jsx)(ke, {})]
                             })
                         }
                     }]), a
                 }(r.Component),
-                Mt = a(184),
-                Rt = Object(Mt.a)({
+                At = a(184),
+                Mt = Object(At.a)({
                     palette: {
                         type: "light",
                         primary: {
@@ -3254,7 +3268,7 @@
                         }
                     }
                 }),
-                Pt = Object(Mt.a)({
+                Pt = Object(At.a)({
                     palette: {
                         type: "dark",
                         primary: {
@@ -3284,7 +3298,7 @@
                         }
                     }
                 }),
-                Ut = Object(Mt.a)({
+                Ut = Object(At.a)({
                     palette: {
                         type: "dark",
                         primary: {
@@ -3314,7 +3328,7 @@
                         }
                     }
                 }),
-                qt = Object(Mt.a)({
+                Jt = Object(At.a)({
                     palette: {
                         type: "dark",
                         primary: {
@@ -3344,10 +3358,10 @@
                         }
                     }
                 }),
-                Jt = JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}");
-            Jt.custom_theme && (pt = Object(Mt.a)(Jt.custom_theme)), "light" === window.localStorage.getItem("theme") || "light" === window.sessionStorage.getItem("theme") ? mt = Rt : "dark" === window.localStorage.getItem("theme") || "dark" === window.sessionStorage.getItem("theme") ? mt = Pt : "dracula" === window.localStorage.getItem("theme") || "dracula" === window.sessionStorage.getItem("theme") ? mt = Ut : "nord" === window.localStorage.getItem("theme") || "nord" === window.sessionStorage.getItem("theme") ? mt = qt : "custom" === window.localStorage.getItem("theme") || "custom" === window.sessionStorage.getItem("theme") ? mt = pt : (mt = Pt, window.localStorage.setItem("theme", "dark"), window.sessionStorage.setItem("theme", "dark"));
+                qt = JSON.parse(window.localStorage.getItem("ui_config") || window.sessionStorage.getItem("ui_config") || "{}");
+            qt.custom_theme && (pt = Object(At.a)(qt.custom_theme)), "light" === window.localStorage.getItem("theme") || "light" === window.sessionStorage.getItem("theme") ? mt = Mt : "dark" === window.localStorage.getItem("theme") || "dark" === window.sessionStorage.getItem("theme") ? mt = Pt : "dracula" === window.localStorage.getItem("theme") || "dracula" === window.sessionStorage.getItem("theme") ? mt = Ut : "nord" === window.localStorage.getItem("theme") || "nord" === window.sessionStorage.getItem("theme") ? mt = Jt : "custom" === window.localStorage.getItem("theme") || "custom" === window.sessionStorage.getItem("theme") ? mt = pt : (mt = Pt, window.localStorage.setItem("theme", "dark"), window.sessionStorage.setItem("theme", "dark"));
             var Ft = mt,
-                Wt = (a(242), a(314)),
+                Wt = (a(243), a(315)),
                 Vt = a(179),
                 Kt = function(e) {
                     Object(j.a)(a, e);
@@ -3355,7 +3369,7 @@
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             metadata: n.props.metadata,
                             server: window.sessionStorage.getItem("server") || window.localStorage.getItem("server") || window.location.origin
                         }, n
@@ -3366,50 +3380,50 @@
                             var e = this.state,
                                 t = e.metadata,
                                 a = e.server;
-                            return Object(w.jsx)("div", {
+                            return Object(y.jsx)("div", {
                                 className: "Tile",
                                 children: t.length ? t.map((function(e) {
-                                    return Object(w.jsxs)("div", {
+                                    return Object(y.jsxs)("div", {
                                         className: "tile__category",
-                                        children: [Object(w.jsx)(c.b, {
+                                        children: [Object(y.jsx)(c.b, {
                                             to: "/browse/".concat(e.categoryInfo.name),
                                             className: "tile__category__title no_decoration_link",
                                             children: e.categoryInfo.name
-                                        }, Ne()), Object(w.jsx)("div", {
+                                        }, Ne()), Object(y.jsx)("div", {
                                             className: "tile__items",
-                                            children: Object(w.jsx)(Wt.a, {
+                                            children: Object(y.jsx)(Wt.a, {
                                                 className: "p-2",
                                                 children: e.children.length ? e.children.map((function(e) {
-                                                    return Object(w.jsx)(Vt.a, {
+                                                    return Object(y.jsx)(Vt.a, {
                                                         className: "p-sm-3",
                                                         xs: 6,
                                                         sm: 4,
                                                         md: 3,
                                                         lg: 3,
                                                         xl: 2,
-                                                        children: Object(w.jsx)(ue.a, {
-                                                            children: Object(w.jsxs)(c.b, {
+                                                        children: Object(y.jsx)(he.a, {
+                                                            children: Object(y.jsxs)(c.b, {
                                                                 to: "/view/".concat("file" == e.type ? "m" : "tb", "/").concat(e.id),
-                                                                children: [Object(w.jsx)("div", {
+                                                                children: [Object(y.jsx)("div", {
                                                                     className: "card-img mb-2",
-                                                                    children: Object(w.jsxs)("div", {
+                                                                    children: Object(y.jsxs)("div", {
                                                                         className: "card-img-image",
-                                                                        children: [Object(w.jsx)(ue.a.Image, {
+                                                                        children: [Object(y.jsx)(he.a.Image, {
                                                                             className: "img-fluid card-image rounded",
                                                                             src: e.posterPath || "".concat(a, "/api/v1/image/poster?text=").concat(e.title, "&extention=jpeg"),
                                                                             alt: e.title
-                                                                        }), Object(w.jsx)("div", {
+                                                                        }), Object(y.jsx)("div", {
                                                                             className: "middle",
-                                                                            children: Object(w.jsx)("span", {
+                                                                            children: Object(y.jsx)("span", {
                                                                                 className: "round-button",
-                                                                                children: Object(w.jsx)("i", {
+                                                                                children: Object(y.jsx)("i", {
                                                                                     className: "bi bi-play-fill"
                                                                                 })
                                                                             })
                                                                         })]
                                                                     })
-                                                                }), Object(w.jsx)(ue.a.Caption, {
-                                                                    children: Object(w.jsx)("h6", {
+                                                                }), Object(y.jsx)(he.a.Caption, {
+                                                                    children: Object(y.jsx)("h6", {
                                                                         children: e.title
                                                                     })
                                                                 }, Ne())]
@@ -3431,7 +3445,7 @@
 
                     function a(e) {
                         var r;
-                        return Object(h.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
+                        return Object(u.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
                             isCreateOpen: !1
                         }), r
                     }
@@ -3442,22 +3456,22 @@
                                 t = e.isOpen,
                                 a = e.metadata,
                                 n = e.trailer;
-                            return Object(w.jsx)("div", {
-                                children: Object(w.jsxs)(L.a, {
+                            return Object(y.jsx)("div", {
+                                children: Object(y.jsxs)(R.a, {
                                     onClose: this.props.handleClose,
                                     "aria-labelledby": "simple-dialog-title",
                                     fullWidth: !0,
                                     maxWidth: "lg",
                                     open: t || !1,
-                                    children: [Object(w.jsxs)(M.a, {
+                                    children: [Object(y.jsxs)(A.a, {
                                         id: "simple-dialog-title",
                                         children: [a.title, " - Trailer"]
-                                    }), Object(w.jsx)("div", {
+                                    }), Object(y.jsx)("div", {
                                         style: {
                                             padding: "0 30px 30px 30px",
                                             height: "70vh"
                                         },
-                                        children: Object(w.jsx)("iframe", {
+                                        children: Object(y.jsx)("iframe", {
                                             style: {
                                                 width: "100%",
                                                 height: "100%",
@@ -3475,24 +3489,24 @@
                         }
                     }]), a
                 }(r.Component);
-            var Gt = a(162),
-                Ht = a(72),
-                Xt = a.n(Ht),
-                Yt = a(96),
-                Zt = a(315),
-                Qt = a(336),
-                $t = a(338),
-                ea = a(137),
-                ta = a(138),
+            var Ht = a(162),
+                Gt = a(72),
+                Yt = a.n(Gt),
+                Xt = a(96),
+                $t = a(316),
+                Qt = a(337),
+                Zt = a(339),
+                ea = a(138),
+                ta = a(139),
                 aa = a.n(ta),
-                na = a(316),
+                na = a(317),
                 ra = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var r;
-                        return Object(h.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
+                        return Object(u.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
                             subtitleMenuAnchor: !1,
                             showResults: !1,
                             tooltipOpen: !1,
@@ -3506,8 +3520,8 @@
                             var e = this.state,
                                 t = e.metadata,
                                 a = e.ui_config;
-                            ht({
-                                title: "".concat(a.title || "libDrive", " - ").concat(t.title || t.name),
+                            ut({
+                                title: "".concat(a.title || "Drive", " - ").concat(t.title || t.name),
                                 description: "Watch ".concat(t.title || t.name, " on ").concat(a.title || "libDrive", "! \u2014 ").concat(t.overview),
                                 image: t.backdropPath,
                                 type: "video.movie"
@@ -3516,9 +3530,9 @@
                     }, {
                         key: "onFileChange",
                         value: function() {
-                            var e = Object(Yt.a)(Xt.a.mark((function e(t) {
+                            var e = Object(Xt.a)(Yt.a.mark((function e(t) {
                                 var a;
-                                return Xt.a.wrap((function(e) {
+                                return Yt.a.wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (!t.target.files.length) {
@@ -3626,11 +3640,11 @@
                                     }) : e.props.history.push("/logout")
                                 } else t.request && (r ? k.a.fire({
                                     title: "Error!",
-                                    text: "MeuDrive n\xe3o p\xf4de se comunicar com o servidor!",
+                                    text: "Drive could not communicate with the server! Is '".concat(r, "' the correct address?"),
                                     icon: "error",
-                                    confirmButtonText: "Sair",
+                                    confirmButtonText: "Logout",
                                     confirmButtonColor: Ft.palette.success.main,
-                                    cancelButtonText: "Tente Novamente",
+                                    cancelButtonText: "Retry",
                                     cancelButtonColor: Ft.palette.error.main,
                                     showCancelButton: !0
                                 }).then((function(t) {
@@ -3672,12 +3686,12 @@
                                 s = t.tracks,
                                 l = t.showResults,
                                 d = (t.tooltipOpen, t.tooltipOpen2),
-                                u = t.trailer;
-                            console.log(r), a && (s = [{
+                                h = t.trailer;
+                            a && (s = [{
                                 name: n,
                                 url: a
                             }]);
-                            var h = i.map((function(e) {
+                            var u = i.map((function(e) {
                                     return {
                                         html: e.name,
                                         url: e.url
@@ -3685,29 +3699,29 @@
                                 })),
                                 p = this.prettyDate(),
                                 m = p.slice(p.length - 4);
-                            return Object(w.jsxs)("div", {
+                            return Object(y.jsxs)("div", {
                                 className: "MovieView",
-                                children: [Object(w.jsx)("div", {
+                                children: [Object(y.jsx)("div", {
                                     className: "backdrop-img",
-                                    children: Object(w.jsx)("img", {
+                                    children: Object(y.jsx)("img", {
                                         src: r.backdropPath,
                                         alt: r.title + "[backdrop]"
                                     })
-                                }), Object(w.jsx)("div", {
+                                }), Object(y.jsx)("div", {
                                     className: "item-details-content",
-                                    children: Object(w.jsxs)("div", {
+                                    children: Object(y.jsxs)("div", {
                                         className: "row",
-                                        children: [Object(w.jsx)("div", {
+                                        children: [Object(y.jsx)("div", {
                                             className: "col-lg-3",
-                                            children: Object(w.jsxs)("div", {
+                                            children: Object(y.jsxs)("div", {
                                                 className: "item-details-content-poster",
-                                                children: [Object(w.jsx)("img", {
+                                                children: [Object(y.jsx)("img", {
                                                     className: "img-fluid rounded",
                                                     src: r.posterPath,
                                                     alt: r.title + "[poster]"
-                                                }), Object(w.jsxs)("div", {
+                                                }), Object(y.jsxs)("div", {
                                                     className: "item-details-btn",
-                                                    children: [Object(w.jsx)(B.a, {
+                                                    children: [Object(y.jsx)(B.a, {
                                                         className: "s-btn-1",
                                                         variant: "primary",
                                                         onClick: function() {
@@ -3715,47 +3729,47 @@
                                                                 showResults: !0
                                                             })
                                                         },
-                                                        children: "Assistir"
-                                                    }), Object(w.jsxs)("div", {
+                                                        children: "Watch"
+                                                    }), Object(y.jsxs)("div", {
                                                         className: "item-details-btn-bottom",
-                                                        children: [Object(w.jsx)(B.a, {
+                                                        children: [Object(y.jsx)(B.a, {
                                                             className: "s-btn-2",
                                                             variant: "primary",
                                                             onClick: this.handleTrailer,
-                                                            children: Object(w.jsx)("i", {
+                                                            children: Object(y.jsx)("i", {
                                                                 className: "bi bi-youtube"
                                                             })
-                                                        }), Object(w.jsx)(B.a, {
+                                                        }), Object(y.jsx)(B.a, {
                                                             className: "s-btn-2",
                                                             variant: "primary",
-                                                            children: Object(w.jsx)("i", {
+                                                            children: Object(y.jsx)("i", {
                                                                 className: "bi bi-bookmark-plus"
                                                             })
                                                         })]
                                                     })]
                                                 })]
                                             })
-                                        }), Object(w.jsx)("div", {
+                                        }), Object(y.jsx)("div", {
                                             className: "col-lg-9",
-                                            children: Object(w.jsxs)("div", {
+                                            children: Object(y.jsxs)("div", {
                                                 className: "item__details__text",
-                                                children: [Object(w.jsxs)("div", {
+                                                children: [Object(y.jsxs)("div", {
                                                     className: "item__details__title",
-                                                    children: [Object(w.jsx)("h3", {
+                                                    children: [Object(y.jsx)("h3", {
                                                         children: r.title
-                                                    }), " ", Object(w.jsxs)("span", {
-                                                        children: ["T\xedtulo Original: ", r.title]
+                                                    }), " ", Object(y.jsxs)("span", {
+                                                        children: ["Original Title: ", r.title]
                                                     })]
-                                                }), Object(w.jsxs)("div", {
+                                                }), Object(y.jsxs)("div", {
                                                     className: "vote__container",
-                                                    children: ["Avalia\xe7\xe3o", Object(w.jsx)(Zt.a, {
+                                                    children: ["Rating", Object(y.jsx)($t.a, {
                                                         onClickAway: function() {
                                                             return e.setState({
                                                                 tooltipOpen2: !1
                                                             })
                                                         },
-                                                        children: Object(w.jsx)(E.a, {
-                                                            title: Object(w.jsxs)(A.a, {
+                                                        children: Object(y.jsx)(E.a, {
+                                                            title: Object(y.jsxs)(L.a, {
                                                                 variant: "subtitle2",
                                                                 children: [r.voteAverage, "/10"]
                                                             }),
@@ -3773,13 +3787,13 @@
                                                             PopperProps: {
                                                                 disablePortal: !0
                                                             },
-                                                            children: Object(w.jsx)("div", {
+                                                            children: Object(y.jsx)("div", {
                                                                 onClick: function() {
                                                                     return e.setState({
                                                                         tooltipOpen2: !0
                                                                     })
                                                                 },
-                                                                children: Object(w.jsx)($t.a, {
+                                                                children: Object(y.jsx)(Zt.a, {
                                                                     name: "Rating",
                                                                     value: r.voteAverage,
                                                                     max: 10,
@@ -3788,40 +3802,36 @@
                                                             })
                                                         })
                                                     })]
-                                                }), Object(w.jsx)("p", {
+                                                }), Object(y.jsx)("p", {
                                                     children: r.overview
-                                                }), Object(w.jsx)("div", {
+                                                }), Object(y.jsx)("div", {
                                                     className: "item__details__widget",
-                                                    children: Object(w.jsx)("div", {
+                                                    children: Object(y.jsx)("div", {
                                                         className: "row",
-                                                        children: Object(w.jsx)("div", {
+                                                        children: Object(y.jsx)("div", {
                                                             className: "col",
-                                                            children: Object(w.jsxs)("ul", {
-                                                                children: [Object(w.jsxs)("li", {
-                                                                    children: [Object(w.jsx)("span", {
-                                                                        children: "Tipo:"
+                                                            children: Object(y.jsxs)("ul", {
+                                                                children: [Object(y.jsxs)("li", {
+                                                                    children: [Object(y.jsx)("span", {
+                                                                        children: "Tipo"
                                                                     }), " Filme"]
-                                                                }), Object(w.jsxs)("li", {
-                                                                    children: [Object(w.jsx)("span", {
-                                                                        children: "Data de lan\xe7amento:"
-                                                                    }), " ", r.language ? "".concat(this.prettyDate(), " (").concat(r.language.toUpperCase(), ")") : this.prettyDate()]
-                                                                }), Object(w.jsxs)("li", {
-                                                                    children: [Object(w.jsx)("span", {
-                                                                        children: "G\xeanero:\xa0"
-                                                                    }), r.adult ? Object(w.jsx)(Qt.a, {
+                                                                }), Object(y.jsxs)("li", {
+                                                                    children: [Object(y.jsx)("span", {
+                                                                        children: "Genre:\xa0"
+                                                                    }), r.adult ? Object(y.jsx)(Qt.a, {
                                                                         color: "secondary",
-                                                                        avatar: Object(w.jsx)(Be.a, {
+                                                                        avatar: Object(y.jsx)(Be.a, {
                                                                             children: "R"
                                                                         }),
                                                                         className: "info__genre",
                                                                         label: "Adult (18+)",
                                                                         variant: "outlined"
                                                                     }) : null, r.genres && r.genres.length ? r.genres.map((function(e) {
-                                                                        return Object(w.jsx)(c.b, {
+                                                                        return Object(y.jsx)(c.b, {
                                                                             to: "/genres?genre=".concat(e),
                                                                             className: "no_decoration_link",
-                                                                            children: Object(w.jsx)(Qt.a, {
-                                                                                avatar: Object(w.jsx)(Be.a, {
+                                                                            children: Object(y.jsx)(Qt.a, {
+                                                                                avatar: Object(y.jsx)(Be.a, {
                                                                                     style: {
                                                                                         backgroundColor: "#14dca0",
                                                                                         color: "#000",
@@ -3843,20 +3853,20 @@
                                             })
                                         })]
                                     })
-                                }), l ? Object(w.jsxs)("div", {
+                                }), l ? Object(y.jsxs)("div", {
                                     className: "plyr__component",
-                                    children: [Object(w.jsx)("div", {
+                                    children: [Object(y.jsx)("div", {
                                         className: "video-top",
-                                        children: Object(w.jsxs)("span", {
+                                        children: Object(y.jsxs)("span", {
                                             className: "video-title color-white",
-                                            children: ["\xa0", Object(w.jsx)("span", {
+                                            children: ["\xa0", Object(y.jsx)("span", {
                                                 className: "break",
                                                 children: "|"
                                             }), " ", r.title + " (" + m + ")"]
                                         })
-                                    }), Object(w.jsx)(na.a, {
+                                    }), Object(y.jsx)(na.a, {
                                         aspectRatio: "16x9",
-                                        children: Object(w.jsx)(ea.a, {
+                                        children: Object(y.jsx)(ea.a, {
                                             option: {
                                                 theme: "#14dca0",
                                                 url: i[0].url,
@@ -3866,8 +3876,8 @@
                                                 fullscreen: !0,
                                                 whitelist: ["*"],
                                                 playbackRate: !0,
-                                                localSubtitle: !0,
-                                                quality: h,
+                                                localSubtitle: !1,
+                                                quality: u,
                                                 subtitle: {
                                                     url: "",
                                                     type: "srt",
@@ -3879,32 +3889,32 @@
                                                 }
                                             }
                                         })
-                                    }), Object(w.jsx)("div", {
+                                    }), Object(y.jsx)("div", {
                                         className: "video_button_group",
-                                        children: Object(w.jsxs)("div", {
+                                        children: Object(y.jsxs)("div", {
                                             className: "info__buttons",
-                                            children: [Object(w.jsx)(nt, {
+                                            children: [Object(y.jsx)(nt, {
                                                 state: this.state
-                                            }), Object(w.jsx)(D, {
+                                            }), Object(y.jsx)(D, {
                                                 state: this.state
-                                            }), Object(w.jsxs)("div", {
+                                            }), Object(y.jsxs)("div", {
                                                 className: "info__button",
-                                                children: [Object(w.jsx)("input", {
+                                                children: [Object(y.jsx)("input", {
                                                     id: "file-input",
                                                     hidden: !0,
                                                     onChange: this.onFileChange,
                                                     type: "file",
                                                     accept: ".vtt,.srt"
-                                                }), Object(w.jsxs)(B.a, {
+                                                }), Object(y.jsxs)(B.a, {
                                                     disabled: !0,
                                                     variant: "dark",
                                                     component: "span",
                                                     "aria-controls": "subtitles-menu",
                                                     onClick: this.handleSubtitleMenuOpen,
-                                                    children: [Object(w.jsx)("i", {
+                                                    children: [Object(y.jsx)("i", {
                                                         className: "bi bi-badge-cc-fill"
-                                                    }), "Legenda"]
-                                                }), Object(w.jsxs)(O.a, {
+                                                    }), "Subtitle"]
+                                                }), Object(y.jsxs)(O.a, {
                                                     id: "subtitles-menu",
                                                     anchorEl: o,
                                                     keepMounted: !0,
@@ -3918,18 +3928,18 @@
                                                     },
                                                     open: Boolean(o),
                                                     onClose: this.handleSubtitleMenuClose,
-                                                    children: [s.length ? Object(w.jsxs)("div", {
+                                                    children: [s.length ? Object(y.jsxs)("div", {
                                                         children: [s.map((function(t) {
-                                                            return Object(w.jsx)("a", {
+                                                            return Object(y.jsx)("a", {
                                                                 className: "no_decoration_link",
                                                                 href: t.url,
-                                                                children: Object(w.jsx)(v.a, {
+                                                                children: Object(y.jsx)(x.a, {
                                                                     onClick: e.handleSubtitleMenuClose,
                                                                     children: t.name
                                                                 })
                                                             })
-                                                        })), Object(w.jsx)(f.a, {})]
-                                                    }) : null, Object(w.jsx)(v.a, {
+                                                        })), Object(y.jsx)(f.a, {})]
+                                                    }) : null, Object(y.jsx)(x.a, {
                                                         onClick: function() {
                                                             document.getElementById("file-input-button").click(), e.setState({
                                                                 subtitleMenuAnchor: !1
@@ -3937,35 +3947,35 @@
                                                         },
                                                         children: "Upload"
                                                     })]
-                                                }), Object(w.jsx)("label", {
+                                                }), Object(y.jsx)("label", {
                                                     htmlFor: "file-input",
                                                     id: "file-input-button"
                                                 })]
                                             })]
                                         })
                                     })]
-                                }) : Object(w.jsx)(w.Fragment, {}), Object(w.jsx)(At, {
+                                }) : Object(y.jsx)(y.Fragment, {}), Object(y.jsx)(Lt, {
                                     isOpen: this.state.openStarDialog,
                                     handleClose: this.handleStarClose,
                                     metadata: r
-                                }), Object(w.jsx)(zt, {
+                                }), Object(y.jsx)(zt, {
                                     isOpen: this.state.openTrailerDialog,
                                     handleClose: this.handleTrailerClose,
                                     metadata: r,
-                                    trailer: u
+                                    trailer: h
                                 })]
                             })
                         }
                     }]), a
                 }(r.Component),
-                ia = a(317),
+                ia = a(318),
                 oa = function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var r;
-                        return Object(h.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
+                        return Object(u.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
                             tooltipOpen: !1,
                             tooltipOpen2: !1,
                             trailer: {}
@@ -3977,8 +3987,8 @@
                             var e = this.state,
                                 t = e.metadata,
                                 a = e.ui_config;
-                            ht({
-                                title: "".concat(a.title || "libDrive", " - ").concat(t.title || t.name),
+                            ut({
+                                title: "".concat(a.title || "Drive", " - ").concat(t.title || t.name),
                                 description: "Watch ".concat(t.title || t.name, " on ").concat(a.title || "libDrive", "! \u2014 ").concat(t.overview),
                                 image: t.backdropPath,
                                 type: "video.movie"
@@ -4077,74 +4087,74 @@
                                 a = t.metadata,
                                 n = (t.server, t.starred, t.tooltipOpen, t.tooltipOpen2),
                                 r = t.trailer;
-                            return Object(w.jsxs)("div", {
+                            return Object(y.jsxs)("div", {
                                 className: "TVBView",
-                                children: [Object(w.jsx)("div", {
+                                children: [Object(y.jsx)("div", {
                                     className: "backdrop-img",
-                                    children: Object(w.jsx)("img", {
+                                    children: Object(y.jsx)("img", {
                                         src: a.backdropPath,
                                         alt: a.title + "[backdrop]"
                                     })
-                                }), Object(w.jsx)("div", {
+                                }), Object(y.jsx)("div", {
                                     className: "item-details-content",
-                                    children: Object(w.jsxs)("div", {
+                                    children: Object(y.jsxs)("div", {
                                         className: "row",
-                                        children: [Object(w.jsx)("div", {
+                                        children: [console.log(a.children), Object(y.jsx)("div", {
                                             className: "col-lg-3",
-                                            children: Object(w.jsxs)("div", {
+                                            children: Object(y.jsxs)("div", {
                                                 className: "item-details-content-poster",
-                                                children: [Object(w.jsx)("img", {
+                                                children: [Object(y.jsx)("img", {
                                                     className: "img-fluid rounded",
                                                     src: a.posterPath,
                                                     alt: a.title + "[poster]"
-                                                }), Object(w.jsxs)("div", {
+                                                }), Object(y.jsxs)("div", {
                                                     className: "item-details-btn",
-                                                    children: [Object(w.jsx)(B.a, {
+                                                    children: [Object(y.jsx)(B.a, {
                                                         as: c.b,
                                                         to: "/view/ts/".concat(a.children[0].id, "?q=0"),
                                                         className: "s-btn-1",
                                                         variant: "primary",
-                                                        children: "Assistir"
-                                                    }), Object(w.jsxs)("div", {
+                                                        children: "Watch"
+                                                    }), Object(y.jsxs)("div", {
                                                         className: "item-details-btn-bottom",
-                                                        children: [Object(w.jsx)(B.a, {
+                                                        children: [Object(y.jsx)(B.a, {
                                                             className: "s-btn-2",
                                                             variant: "primary",
                                                             onClick: this.handleTrailer,
-                                                            children: Object(w.jsx)("i", {
+                                                            children: Object(y.jsx)("i", {
                                                                 className: "bi bi-youtube"
                                                             })
-                                                        }), Object(w.jsx)(B.a, {
+                                                        }), Object(y.jsx)(B.a, {
                                                             className: "s-btn-2",
                                                             variant: "primary",
-                                                            children: Object(w.jsx)("i", {
+                                                            children: Object(y.jsx)("i", {
                                                                 className: "bi bi-bookmark-plus"
                                                             })
                                                         })]
                                                     })]
                                                 })]
                                             })
-                                        }), Object(w.jsx)("div", {
+                                        }), Object(y.jsx)("div", {
                                             className: "col-lg-9",
-                                            children: Object(w.jsxs)("div", {
+                                            children: Object(y.jsxs)("div", {
                                                 className: "item__details__text",
-                                                children: [Object(w.jsxs)("div", {
+                                                children: [Object(y.jsxs)("div", {
                                                     className: "item__details__title",
-                                                    children: [Object(w.jsx)("h3", {
+                                                    children: [Object(y.jsx)("h3", {
                                                         children: a.title
-                                                    }), " ", Object(w.jsxs)("span", {
-                                                        children: ["T\xedtulo Original: ", a.title]
+                                                    }), " ", Object(y.jsxs)("span", {
+                                                        children: ["Original Title: ", a.title]
                                                     })]
-                                                }), Object(w.jsxs)("div", {
+                                                }), Object(y.jsxs)("div", {
                                                     className: "vote__container",
-                                                    children: ["Avalia\xe7\xe3o", Object(w.jsx)(Zt.a, {
+                                                    children: ["Rating", Object(y.jsx)($t.a, {
                                                         onClickAway: function() {
                                                             return e.setState({
                                                                 tooltipOpen2: !1
                                                             })
                                                         },
-                                                        children: Object(w.jsx)(E.a, {
-                                                            title: Object(w.jsxs)(A.a, {
+                                                        children: Object(y.jsx)(E.a, {
+                                                            title: Object(y.jsxs)(L.a, {
                                                                 variant: "subtitle2",
                                                                 children: [a.voteAverage, "/10"]
                                                             }),
@@ -4162,13 +4172,13 @@
                                                             PopperProps: {
                                                                 disablePortal: !0
                                                             },
-                                                            children: Object(w.jsx)("div", {
+                                                            children: Object(y.jsx)("div", {
                                                                 onClick: function() {
                                                                     return e.setState({
                                                                         tooltipOpen2: !0
                                                                     })
                                                                 },
-                                                                children: Object(w.jsx)($t.a, {
+                                                                children: Object(y.jsx)(Zt.a, {
                                                                     name: "Rating",
                                                                     value: a.voteAverage,
                                                                     max: 10,
@@ -4177,42 +4187,42 @@
                                                             })
                                                         })
                                                     })]
-                                                }), Object(w.jsx)("p", {
+                                                }), Object(y.jsx)("p", {
                                                     children: a.overview
-                                                }), Object(w.jsxs)("div", {
+                                                }), Object(y.jsxs)("div", {
                                                     className: "item__details__widget",
-                                                    children: [Object(w.jsx)(we, {
+                                                    children: [Object(y.jsx)(ye, {
                                                         state: this.state
-                                                    }), Object(w.jsx)("div", {
+                                                    }), Object(y.jsx)("div", {
                                                         className: "row",
-                                                        children: Object(w.jsx)("div", {
+                                                        children: Object(y.jsx)("div", {
                                                             className: "col",
-                                                            children: Object(w.jsxs)("ul", {
-                                                                children: [Object(w.jsxs)("li", {
-                                                                    children: [Object(w.jsx)("span", {
-                                                                        children: "Tipo:"
-                                                                    }), " ", "Series"]
-                                                                }), Object(w.jsxs)("li", {
-                                                                    children: [Object(w.jsx)("span", {
-                                                                        children: "Data de lan\xe7amento:"
+                                                            children: Object(y.jsxs)("ul", {
+                                                                children: [Object(y.jsxs)("li", {
+                                                                    children: [Object(y.jsx)("span", {
+                                                                        children: "Tipo"
+                                                                    }), " ", "Filme"]
+                                                                }), Object(y.jsxs)("li", {
+                                                                    children: [Object(y.jsx)("span", {
+                                                                        children: "Data de Lançamento:"
                                                                     }), " ", a.language ? "".concat(this.prettyDate(), " (").concat(a.language.toUpperCase(), ")") : this.prettyDate()]
-                                                                }), Object(w.jsxs)("li", {
-                                                                    children: [Object(w.jsx)("span", {
-                                                                        children: "G\xeanero:"
-                                                                    }), a.adult ? Object(w.jsx)(Qt.a, {
+                                                                }), Object(y.jsxs)("li", {
+                                                                    children: [Object(y.jsx)("span", {
+                                                                        children: "Gênero:"
+                                                                    }), a.adult ? Object(y.jsx)(Qt.a, {
                                                                         color: "secondary",
-                                                                        avatar: Object(w.jsx)(Be.a, {
+                                                                        avatar: Object(y.jsx)(Be.a, {
                                                                             children: "R"
                                                                         }),
                                                                         className: "info__genre",
                                                                         label: "Adult (18+)",
                                                                         variant: "outlined"
                                                                     }) : null, a.genres && a.genres.length ? a.genres.map((function(e) {
-                                                                        return Object(w.jsx)(c.b, {
+                                                                        return Object(y.jsx)(c.b, {
                                                                             to: "/genres?genre=".concat(e),
                                                                             className: "no_decoration_link",
-                                                                            children: Object(w.jsx)(Qt.a, {
-                                                                                avatar: Object(w.jsx)(Be.a, {
+                                                                            children: Object(y.jsx)(Qt.a, {
+                                                                                avatar: Object(y.jsx)(Be.a, {
                                                                                     style: {
                                                                                         backgroundColor: "#14dca0",
                                                                                         color: "#000",
@@ -4234,11 +4244,11 @@
                                             })
                                         })]
                                     })
-                                }), Object(w.jsx)(At, {
+                                }), Object(y.jsx)(Lt, {
                                     isOpen: this.state.openStarDialog,
                                     handleClose: this.handleStarClose,
                                     metadata: a
-                                }), Object(w.jsx)(zt, {
+                                }), Object(y.jsx)(zt, {
                                     isOpen: this.state.openTrailerDialog,
                                     handleClose: this.handleTrailerClose,
                                     metadata: a,
@@ -4254,7 +4264,7 @@
 
                     function a(e) {
                         var r;
-                        return Object(h.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
+                        return Object(u.a)(this, a), (r = t.call(this, e)).state = Object(n.a)(Object(n.a)({}, e.state), {}, {
                             subtitleMenuAnchor: !1
                         }), r.onFileChange = r.onFileChange.bind(Object(m.a)(r)), r.handleSubtitleMenuOpen = r.handleSubtitleMenuOpen.bind(Object(m.a)(r)), r.handleSubtitleMenuClose = r.handleSubtitleMenuClose.bind(Object(m.a)(r)), r.handleClickImage = r.handleClickImage.bind(Object(m.a)(r)), r.handleCloseDialog = r.handleCloseDialog.bind(Object(m.a)(r)), r.handleParentSeason = r.handleParentSeason.bind(Object(m.a)(r)), r
                     }
@@ -4265,11 +4275,11 @@
                                 t = e.metadata,
                                 a = e.q,
                                 n = e.ui_config;
-                            t.children.length > 0 ? ht({
-                                title: "".concat(n.title || "libDrive", " - ").concat(t.children[a].name),
+                            t.children.length > 0 ? ut({
+                                title: "".concat(n.title || "Drive", " - ").concat(t.children[a].name),
                                 description: "Watch ".concat(t.children[a].name, " on ").concat(n.title || "libDrive", "!"),
                                 type: "video.episode"
-                            }) : ht({
+                            }) : ut({
                                 title: "".concat(n.title || "libDrive", " - NotFound"),
                                 description: "Watch --NotFound-- on ".concat(n.title || "libDrive", "!"),
                                 type: "video.episode"
@@ -4287,9 +4297,9 @@
                     }, {
                         key: "onFileChange",
                         value: function() {
-                            var e = Object(Yt.a)(Xt.a.mark((function e(t) {
+                            var e = Object(Xt.a)(Yt.a.mark((function e(t) {
                                 var a;
-                                return Xt.a.wrap((function(e) {
+                                return Yt.a.wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             if (!t.target.files.length) {
@@ -4378,58 +4388,58 @@
                                 s = a.metadata,
                                 l = a.parent_index,
                                 d = (a.playerKey, a.q),
-                                u = a.server,
-                                h = a.videos,
+                                h = a.server,
+                                u = a.videos,
                                 p = a.tracks,
                                 m = a.subtitleMenuAnchor;
                             r && (p = [{
                                 name: i,
                                 url: r
                             }]);
-                            var j = h.map((function(e) {
+                            var j = u.map((function(e) {
                                 return {
                                     html: e.name,
                                     url: e.url
                                 }
                             }));
-                            return Object(w.jsx)("div", {
+                            return Object(y.jsx)("div", {
                                 className: "TVSView",
-                                children: s.children.length > 0 ? Object(w.jsxs)(w.Fragment, {
-                                    children: [Object(w.jsxs)(L.a, {
+                                children: s.children.length > 0 ? Object(y.jsxs)(y.Fragment, {
+                                    children: [Object(y.jsxs)(R.a, {
                                         onClose: this.handleCloseDialog,
                                         "aria-labelledby": "img-dialog",
                                         open: !!o,
-                                        children: [Object(w.jsx)(M.a, {
+                                        children: [Object(y.jsx)(A.a, {
                                             id: "img-dialog",
                                             children: "Thumbnail"
-                                        }), Object(w.jsx)("img", {
+                                        }), Object(y.jsx)("img", {
                                             src: o,
                                             style: {
                                                 padding: "25px"
                                             }
                                         })]
-                                    }), Object(w.jsxs)("div", {
+                                    }), Object(y.jsxs)("div", {
                                         className: "plyr__component",
-                                        children: [Object(w.jsx)("div", {
+                                        children: [Object(y.jsx)("div", {
                                             className: "video-top",
-                                            children: Object(w.jsxs)("span", {
+                                            children: Object(y.jsxs)("span", {
                                                 className: "video-title color-white",
-                                                children: ["\xa0", Object(w.jsxs)(ye.a, {
+                                                children: ["\xa0", Object(y.jsxs)(we.a, {
                                                     className: "mb-1",
                                                     pill: !0,
                                                     bg: "primary",
                                                     children: ["S-", s.parent_children[l].name.replace(/\D/g, "").replace(/\b(0(?!\b))+/g, ""), ".E-", d + 1]
-                                                }), Object(w.jsx)("br", {}), Object(w.jsx)("span", {
+                                                }), Object(y.jsx)("br", {}), Object(y.jsx)("span", {
                                                     className: "break",
                                                     children: "|"
                                                 }), " ", s.children[d].name]
                                             })
-                                        }), Object(w.jsx)(na.a, {
+                                        }), Object(y.jsx)(na.a, {
                                             aspectRatio: "16x9",
-                                            children: Object(w.jsx)(ea.a, {
+                                            children: Object(y.jsx)(ea.a, {
                                                 option: {
                                                     theme: "#14dca0",
-                                                    url: h[0].url,
+                                                    url: u[0].url,
                                                     aspectRatio: !0,
                                                     setting: !0,
                                                     hotkey: !0,
@@ -4449,54 +4459,54 @@
                                                     }
                                                 }
                                             })
-                                        }), Object(w.jsxs)("div", {
+                                        }), Object(y.jsxs)("div", {
                                             className: "d-flex justify-content-between pt-3",
-                                            children: [d < 1 ? Object(w.jsx)(B.a, {
+                                            children: [d < 1 ? Object(y.jsx)(B.a, {
                                                 disabled: !0,
                                                 variant: "dark",
-                                                children: "Primeiro epis\xf3dio"
-                                            }) : Object(w.jsx)(B.a, {
+                                                children: "First Episode"
+                                            }) : Object(y.jsx)(B.a, {
                                                 as: c.b,
                                                 to: {
                                                     pathname: window.location.pathname,
                                                     search: "?q=".concat(+d - 1)
                                                 },
                                                 variant: "primary",
-                                                children: "Anterior"
-                                            }), d === s.children.length - 1 ? Object(w.jsx)(B.a, {
+                                                children: "Previous"
+                                            }), d === s.children.length - 1 ? Object(y.jsx)(B.a, {
                                                 disabled: !0,
                                                 variant: "dark",
-                                                children: "\xdaltimo epis\xf3dio"
-                                            }) : Object(w.jsx)(B.a, {
+                                                children: "Last Episode"
+                                            }) : Object(y.jsx)(B.a, {
                                                 as: c.b,
                                                 to: {
                                                     pathname: window.location.pathname,
                                                     search: "?q=".concat(+d + 1)
                                                 },
                                                 variant: "primary",
-                                                children: "Pr\xf3ximo"
+                                                children: "Next"
                                             })]
-                                        }), Object(w.jsxs)("div", {
+                                        }), Object(y.jsxs)("div", {
                                             className: "file__info",
                                             style: {
                                                 background: Ft.palette.background.paper
                                             },
-                                            children: [s.parent_children[l - 1] ? Object(w.jsx)(B.a, (e = {
+                                            children: [s.parent_children[l - 1] ? Object(y.jsx)(B.a, (e = {
                                                 className: "season-btn"
                                             }, Object(Ue.a)(e, "className", "season-btn"), Object(Ue.a)(e, "onClick", (function() {
                                                 return t.handleParentSeason(!1)
-                                            })), Object(Ue.a)(e, "variant", "primary"), Object(Ue.a)(e, "children", "Temporada anterior"), e)) : Object(w.jsx)(B.a, {
+                                            })), Object(Ue.a)(e, "variant", "primary"), Object(Ue.a)(e, "children", "Previous Season"), e)) : Object(y.jsx)(B.a, {
                                                 className: "season-btn",
                                                 disabled: !0,
                                                 variant: "dark",
-                                                children: "Primeira Temporada"
-                                            }), Object(w.jsx)("div", {
+                                                children: "First Season"
+                                            }), Object(y.jsx)("div", {
                                                 style: {
                                                     display: "flex",
                                                     width: "100%",
                                                     justifyContent: "center"
                                                 },
-                                                children: Object(w.jsxs)("div", {
+                                                children: Object(y.jsxs)("div", {
                                                     style: {
                                                         display: "flex",
                                                         alignContent: "center",
@@ -4504,34 +4514,34 @@
                                                         flexWrap: "wrap",
                                                         margin: "20px 5px 20px 5px"
                                                     },
-                                                    children: [Object(w.jsx)(nt, {
+                                                    children: [Object(y.jsx)(nt, {
                                                         state: Object(n.a)(Object(n.a)({}, this.state), {}, {
                                                             id: s.children[d].id,
                                                             metadata: s.children[d]
                                                         })
-                                                    }), Object(w.jsx)(D, {
+                                                    }), Object(y.jsx)(D, {
                                                         state: this.state,
                                                         tv: !0
-                                                    }), Object(w.jsx)(rt, {
+                                                    }), Object(y.jsx)(rt, {
                                                         state: this.state
-                                                    }), Object(w.jsxs)("div", {
+                                                    }), Object(y.jsxs)("div", {
                                                         className: "info__button",
-                                                        children: [Object(w.jsx)("input", {
+                                                        children: [Object(y.jsx)("input", {
                                                             id: "file-input",
                                                             hidden: !0,
                                                             onChange: this.onFileChange,
                                                             type: "file",
                                                             accept: ".vtt,.srt"
-                                                        }), Object(w.jsxs)(B.a, {
+                                                        }), Object(y.jsxs)(B.a, {
                                                             disabled: !0,
                                                             variant: "dark",
                                                             component: "span",
                                                             "aria-controls": "subtitles-menu",
                                                             onClick: this.handleSubtitleMenuOpen,
-                                                            children: [Object(w.jsx)("i", {
+                                                            children: [Object(y.jsx)("i", {
                                                                 className: "bi bi-badge-cc-fill"
-                                                            }), "Legenda"]
-                                                        }), Object(w.jsxs)(O.a, {
+                                                            }), "Subtitle"]
+                                                        }), Object(y.jsxs)(O.a, {
                                                             id: "subtitles-menu",
                                                             anchorEl: m,
                                                             keepMounted: !0,
@@ -4545,18 +4555,18 @@
                                                             },
                                                             open: Boolean(m),
                                                             onClose: this.handleSubtitleMenuClose,
-                                                            children: [p.length ? Object(w.jsxs)("div", {
+                                                            children: [p.length ? Object(y.jsxs)("div", {
                                                                 children: [p.map((function(e) {
-                                                                    return Object(w.jsx)("a", {
+                                                                    return Object(y.jsx)("a", {
                                                                         className: "no_decoration_link",
                                                                         href: e.url,
-                                                                        children: Object(w.jsx)(v.a, {
+                                                                        children: Object(y.jsx)(x.a, {
                                                                             onClick: t.handleSubtitleMenuClose,
                                                                             children: e.name
                                                                         })
                                                                     })
-                                                                })), Object(w.jsx)(f.a, {})]
-                                                            }) : null, Object(w.jsx)(v.a, {
+                                                                })), Object(y.jsx)(f.a, {})]
+                                                            }) : null, Object(y.jsx)(x.a, {
                                                                 onClick: function() {
                                                                     document.getElementById("file-input-button").click(), t.setState({
                                                                         subtitleMenuAnchor: !1
@@ -4564,80 +4574,80 @@
                                                                 },
                                                                 children: "Upload"
                                                             })]
-                                                        }), Object(w.jsx)("label", {
+                                                        }), Object(y.jsx)("label", {
                                                             htmlFor: "file-input",
                                                             id: "file-input-button"
                                                         })]
                                                     })]
                                                 })
-                                            }), s.parent_children[l + 1] ? Object(w.jsx)(B.a, {
+                                            }), s.parent_children[l + 1] ? Object(y.jsx)(B.a, {
                                                 className: "season-btn",
                                                 onClick: function() {
                                                     return t.handleParentSeason(!0)
                                                 },
                                                 variant: "primary",
-                                                children: "Pr\xf3xima temporada"
-                                            }) : Object(w.jsx)(B.a, {
+                                                children: "Next Season"
+                                            }) : Object(y.jsx)(B.a, {
                                                 className: "season-btn",
                                                 disabled: !0,
                                                 variant: "dark",
-                                                children: "Ultima temporada"
+                                                children: "Last Season"
                                             })]
-                                        }), Object(w.jsx)(Ie.a, {
+                                        }), Object(y.jsx)(Ie.a, {
                                             fluid: !0,
-                                            children: Object(w.jsxs)(Wt.a, {
+                                            children: Object(y.jsxs)(Wt.a, {
                                                 className: "m-2 pt-2",
-                                                children: [Object(w.jsx)("h2", {
+                                                children: [Object(y.jsx)("h2", {
                                                     className: "color-white",
-                                                    children: "Epis\xf3dios"
+                                                    children: "Episodes"
                                                 }), s.children.length ? s.children.map((function(e, a) {
-                                                    return Object(w.jsx)(Vt.a, {
+                                                    return Object(y.jsx)(Vt.a, {
                                                         className: "p-3",
                                                         xs: 12,
                                                         sm: 6,
                                                         md: 4,
                                                         lg: 3,
                                                         xl: 3,
-                                                        children: Object(w.jsx)(c.b, {
+                                                        children: Object(y.jsx)(c.b, {
                                                             to: {
                                                                 pathname: window.location.pathname,
                                                                 search: "?q=".concat(a)
                                                             },
-                                                            children: Object(w.jsxs)(ue.a, {
-                                                                children: [Object(w.jsxs)("div", {
+                                                            children: Object(y.jsxs)(he.a, {
+                                                                children: [Object(y.jsxs)("div", {
                                                                     className: "card-img mb-2",
-                                                                    children: [Object(w.jsx)("div", {
+                                                                    children: [Object(y.jsx)("div", {
                                                                         className: "card-info-episode",
-                                                                        children: Object(w.jsx)("h5", {
-                                                                            children: Object(w.jsxs)(ye.a, {
+                                                                        children: Object(y.jsx)("h5", {
+                                                                            children: Object(y.jsxs)(we.a, {
                                                                                 pill: !0,
                                                                                 bg: "dark",
                                                                                 children: ["S-", s.parent_children[l].name.replace(/\D/g, "").replace(/\b(0(?!\b))+/g, ""), ".E-", a + 1]
                                                                             })
                                                                         })
-                                                                    }), Object(w.jsxs)("div", {
+                                                                    }), Object(y.jsxs)("div", {
                                                                         className: "card-img-image",
-                                                                        children: [Object(w.jsx)(ue.a.Image, {
+                                                                        children: [Object(y.jsx)(he.a.Image, {
                                                                             className: "img-fluid card-image rounded",
                                                                             onClick: function() {
-                                                                                return t.handleClickImage("".concat(u, "/api/v1/image/thumbnail?id=").concat(e.id))
+                                                                                return t.handleClickImage("".concat(h, "/api/v1/image/thumbnail?id=").concat(e.id))
                                                                             },
                                                                             onError: function(e) {
                                                                                 e.target.onerror = null, e.target.src = ge
                                                                             },
-                                                                            src: "".concat(u, "/api/v1/image/thumbnail?id=").concat(e.id)
-                                                                        }), Object(w.jsx)("div", {
+                                                                            src: "".concat(h, "/api/v1/image/thumbnail?id=").concat(e.id)
+                                                                        }), Object(y.jsx)("div", {
                                                                             className: "middle",
-                                                                            children: Object(w.jsx)("span", {
+                                                                            children: Object(y.jsx)("span", {
                                                                                 className: "round-button",
-                                                                                children: Object(w.jsx)("i", {
+                                                                                children: Object(y.jsx)("i", {
                                                                                     className: "bi bi-play-fill"
                                                                                 })
                                                                             })
                                                                         })]
                                                                     })]
-                                                                }), Object(w.jsx)(ue.a.Caption, {
-                                                                    children: Object(w.jsx)("span", {
+                                                                }), Object(y.jsx)(he.a.Caption, {
+                                                                    children: Object(y.jsx)("span", {
                                                                         children: e.name
                                                                     })
                                                                 })]
@@ -4648,32 +4658,32 @@
                                             })
                                         })]
                                     })]
-                                }) : Object(w.jsxs)("div", {
-                                    children: [Object(w.jsx)(ia.a, {
+                                }) : Object(y.jsxs)("div", {
+                                    children: [Object(y.jsx)(ia.a, {
                                         className: "m-3",
-                                        children: "No Episodes Found"
-                                    }), Object(w.jsxs)("div", {
+                                        children: "Atualizando Episódios | Volte mais tarde!"
+                                    }), Object(y.jsxs)("div", {
                                         className: "d-flex justify-content-between p-3",
-                                        children: [s.parent_children[l - 1] ? Object(w.jsx)(B.a, {
+                                        children: [s.parent_children[l - 1] ? Object(y.jsx)(B.a, {
                                             onClick: function() {
                                                 return t.handleParentSeason(!1)
                                             },
                                             variant: "primary",
-                                            children: "Temporada anterior"
-                                        }) : Object(w.jsx)(B.a, {
+                                            children: "Previous Season"
+                                        }) : Object(y.jsx)(B.a, {
                                             disabled: !0,
                                             variant: "dark",
-                                            children: "Primeira temporada"
-                                        }), s.parent_children[l + 1] ? Object(w.jsx)(B.a, {
+                                            children: "First Season"
+                                        }), s.parent_children[l + 1] ? Object(y.jsx)(B.a, {
                                             onClick: function() {
                                                 return t.handleParentSeason(!0)
                                             },
                                             variant: "primary",
-                                            children: "Pr\xf3xima temporada"
-                                        }) : Object(w.jsx)(B.a, {
+                                            children: "Next Season"
+                                        }) : Object(y.jsx)(B.a, {
                                             disabled: !0,
                                             variant: "dark",
-                                            children: "Ultima temporada"
+                                            children: "Last Season"
                                         })]
                                     })]
                                 })
@@ -4681,13 +4691,13 @@
                         }
                     }]), a
                 }(r.Component),
-                ca = (a(244), function(e) {
+                ca = (a(245), function(e) {
                     Object(j.a)(a, e);
                     var t = Object(b.a)(a);
 
                     function a(e) {
                         var n;
-                        return Object(h.a)(this, a), (n = t.call(this, e)).state = {
+                        return Object(u.a)(this, a), (n = t.call(this, e)).state = {
                             auth: window.sessionStorage.getItem("auth") || window.localStorage.getItem("auth") || "0",
                             id: n.props.match.params.id,
                             isAndroid: /(android)/i.test(navigator.userAgent || navigator.vendor || window.opera),
@@ -4696,7 +4706,7 @@
                             metadata: {},
                             openStarDialog: !1,
                             playerKey: Ne(),
-                            q: ve.a.parse(n.props.location.search).q || JSON.parse(window.localStorage.getItem("watching") || "{}")[n.props.match.params.id] || 0,
+                            q: xe.a.parse(n.props.location.search).q || JSON.parse(window.localStorage.getItem("watching") || "{}")[n.props.match.params.id] || 0,
                             server: window.sessionStorage.getItem("server") || window.localStorage.getItem("server") || window.location.origin,
                             videos: [],
                             starred: JSON.parse(window.localStorage.getItem("starred_lists") || "[]").some((function(e) {
@@ -4716,9 +4726,9 @@
                     return Object(p.a)(a, [{
                         key: "componentDidMount",
                         value: function() {
-                            var e = Object(Yt.a)(Xt.a.mark((function e() {
-                                var t, a, n, r, i, o, s, c, l, d, u, h, p, m, j, b, g, O = this;
-                                return Xt.a.wrap((function(e) {
+                            var e = Object(Xt.a)(Yt.a.mark((function e() {
+                                var t, a, n, r, i, o, s, c, l, d, h, u, p, m, j, b, g, O = this;
+                                return Yt.a.wrap((function(e) {
                                     for (;;) switch (e.prev = e.next) {
                                         case 0:
                                             return t = this.state, a = t.auth, n = t.id, r = t.q, i = t.server, o = t.type, r = parseInt(r), a && i || this.props.history.push("/logout"), document.documentElement.style.setProperty("--plyr-color-main", Ft.palette.primary.main), document.documentElement.style.setProperty("--plyr-video-background", Ft.palette.background.default), document.documentElement.style.setProperty("--plyr-menu-background", Ft.palette.background.paper), document.documentElement.style.setProperty("--plyr-menu-color", Ft.palette.text.primary), s = "".concat(i, "/api/v1/metadata"), c = "?a=".concat(a, "&id=").concat(encodeURIComponent(n)), e.next = 11, N.a.get(s + c).catch((function(e) {
@@ -4734,7 +4744,7 @@
                                                         e.isConfirmed && O.props.history.push("/logout")
                                                     })) : i ? k.a.fire({
                                                         title: "Error!",
-                                                        text: "Algo deu errado durante a comunica\xe7\xe3o com o servidor!",
+                                                        text: "Something went wrong while communicating with the server! Is '".concat(i, "' the correct address?"),
                                                         icon: "error",
                                                         confirmButtonText: "Logout",
                                                         confirmButtonColor: Ft.palette.success.main,
@@ -4746,11 +4756,11 @@
                                                     })) : O.props.history.push("/logout")
                                                 } else e.request && (i ? k.a.fire({
                                                     title: "Error!",
-                                                    text: "MeuDrive n\xe3o p\xf4de se comunicar com o servidor!",
+                                                    text: "Drive could not communicate with the server! Is '".concat(i, "' the correct address?"),
                                                     icon: "error",
-                                                    confirmButtonText: "Sair",
+                                                    confirmButtonText: "Logout",
                                                     confirmButtonColor: Ft.palette.success.main,
-                                                    cancelButtonText: "Tente Novamente",
+                                                    cancelButtonText: "Retry",
                                                     cancelButtonColor: Ft.palette.error.main,
                                                     showCancelButton: !0
                                                 }).then((function(e) {
@@ -4762,7 +4772,7 @@
                                                 e.next = 21;
                                                 break
                                             }
-                                            return h = "".concat(i, "/api/v1/streammap"), p = "?a=".concat(a, "&id=").concat(encodeURIComponent(n), "&parent=").concat(d.parents[0], "&name=").concat(encodeURIComponent(d.name), "&t=").concat(d.type, "&server=").concat(encodeURIComponent(i)), e.next = 18, N.a.get(h + p).catch((function(e) {
+                                            return u = "".concat(i, "/api/v1/streammap"), p = "?a=".concat(a, "&id=").concat(encodeURIComponent(n), "&parent=").concat(d.parents[0], "&name=").concat(encodeURIComponent(d.name), "&t=").concat(d.type, "&server=").concat(encodeURIComponent(i)), e.next = 18, N.a.get(u + p).catch((function(e) {
                                                 if (console.error(e), e.response) {
                                                     var t = e.response.data;
                                                     401 === t.code ? k.a.fire({
@@ -4775,7 +4785,7 @@
                                                         e.isConfirmed && O.props.history.push("/logout")
                                                     })) : i ? k.a.fire({
                                                         title: "Error!",
-                                                        text: "Algo deu errado durante a comunica\xe7\xe3o com o servidor!",
+                                                        text: "Something went wrong while communicating with the server! Is '".concat(i, "' the correct address?"),
                                                         icon: "error",
                                                         confirmButtonText: "Logout",
                                                         confirmButtonColor: Ft.palette.success.main,
@@ -4787,11 +4797,11 @@
                                                     })) : O.props.history.push("/logout")
                                                 } else e.request && (i ? k.a.fire({
                                                     title: "Error!",
-                                                    text: "MeuDrive n\xe3o p\xf4de se comunicar com o servidor!",
+                                                    text: "Drive could not communicate with the server! Is '".concat(i, "' the correct address?"),
                                                     icon: "error",
-                                                    confirmButtonText: "Sair",
+                                                    confirmButtonText: "Logout",
                                                     confirmButtonColor: Ft.palette.success.main,
-                                                    cancelButtonText: "Tente Novamente",
+                                                    cancelButtonText: "Retry",
                                                     cancelButtonColor: Ft.palette.error.main,
                                                     showCancelButton: !0
                                                 }).then((function(e) {
@@ -4799,18 +4809,18 @@
                                                 })) : O.props.history.push("/logout"))
                                             }));
                                         case 18:
-                                            u = e.sent, e.next = 32;
+                                            h = e.sent, e.next = 31;
                                             break;
                                         case 21:
                                             if ("ts" != o) {
-                                                e.next = 32;
-                                                break
-                                            }
-                                            if (!d.children.length || !d.children[r]) {
                                                 e.next = 31;
                                                 break
                                             }
-                                            return m = "".concat(i, "/api/v1/streammap"), j = "?a=".concat(a, "&id=").concat(encodeURIComponent(d.children[r].id), "&parent=").concat(n, "&name=").concat(encodeURIComponent(d.children[r].name), "&t=").concat(d.children[r].type, "&server=").concat(encodeURIComponent(i)), console.log(m + j), e.next = 28, N.a.get(m + j).catch((function(e) {
+                                            if (!d.children.length || !d.children[r]) {
+                                                e.next = 30;
+                                                break
+                                            }
+                                            return m = "".concat(i, "/api/v1/streammap"), j = "?a=".concat(a, "&id=").concat(encodeURIComponent(d.children[r].id), "&parent=").concat(n, "&name=").concat(encodeURIComponent(d.children[r].name), "&t=").concat(d.children[r].type, "&server=").concat(encodeURIComponent(i)), e.next = 27, N.a.get(m + j).catch((function(e) {
                                                 if (console.error(e), e.response) {
                                                     var t = e.response.data;
                                                     401 === t.code ? k.a.fire({
@@ -4823,7 +4833,7 @@
                                                         e.isConfirmed && O.props.history.push("/logout")
                                                     })) : i ? k.a.fire({
                                                         title: "Error!",
-                                                        text: "Algo deu errado durante a comunica\xe7\xe3o com o servidor!",
+                                                        text: "Something went wrong while communicating with the server! Is '".concat(i, "' the correct address?"),
                                                         icon: "error",
                                                         confirmButtonText: "Logout",
                                                         confirmButtonColor: Ft.palette.success.main,
@@ -4835,22 +4845,22 @@
                                                     })) : O.props.history.push("/logout")
                                                 } else e.request && (i ? k.a.fire({
                                                     title: "Error!",
-                                                    text: "MeuDrive n\xe3o p\xf4de se comunicar com o servidor!",
+                                                    text: "Drive could not communicate with the server! Is '".concat(i, "' the correct address?"),
                                                     icon: "error",
-                                                    confirmButtonText: "Sair",
+                                                    confirmButtonText: "Logout",
                                                     confirmButtonColor: Ft.palette.success.main,
-                                                    cancelButtonText: "Tente Novamente",
+                                                    cancelButtonText: "Retry",
                                                     cancelButtonColor: Ft.palette.error.main,
                                                     showCancelButton: !0
                                                 }).then((function(e) {
                                                     e.isConfirmed ? O.props.history.push("/logout") : e.isDismissed && location.reload()
                                                 })) : O.props.history.push("/logout"))
                                             }));
-                                        case 28:
-                                            u = e.sent, e.next = 32;
+                                        case 27:
+                                            h = e.sent, e.next = 31;
                                             break;
-                                        case 31:
-                                            u = {
+                                        case 30:
+                                            h = {
                                                 data: {
                                                     content: {
                                                         default_video: 0,
@@ -4859,25 +4869,25 @@
                                                     }
                                                 }
                                             };
-                                        case 32:
+                                        case 31:
                                             if (d.parent_children)
                                                 for (g = 0; g < d.parent_children.length; g++) d.parent_children[g].id == n && (b = g);
                                             "m" == o || "ts" == o ? this.setState({
-                                                default_track: u.data.content.default_track,
-                                                default_video: u.data.content.default_video,
+                                                default_track: h.data.content.default_track,
+                                                default_video: h.data.content.default_video,
                                                 isLoaded: !0,
                                                 metadata: l.data.content,
                                                 parent_index: b,
                                                 q: r,
                                                 type: o,
-                                                videos: u.data.content.videos,
-                                                tracks: u.data.content.tracks
+                                                videos: h.data.content.videos,
+                                                tracks: h.data.content.tracks
                                             }) : this.setState({
                                                 isLoaded: !0,
                                                 metadata: l.data.content,
                                                 type: o
                                             });
-                                        case 34:
+                                        case 33:
                                         case "end":
                                             return e.stop()
                                     }
@@ -4890,7 +4900,7 @@
                     }, {
                         key: "componentWillUnmount",
                         value: function() {
-                            ht()
+                            ut()
                         }
                     }, {
                         key: "render",
@@ -4899,130 +4909,130 @@
                                 t = e.isLoaded,
                                 a = e.metadata,
                                 r = e.ui_config;
-                            return t && ht({
-                                title: a.title ? "".concat(r.title || "libDrive", " - ").concat(a.title) : r.title || "libDrive",
+                            return t && ut({
+                                title: a.title ? "".concat(r.title || "Drive", " - ").concat(a.title) : r.title || "libDrive",
                                 description: "Watch ".concat(a.title || a.name, " on ").concat(r.title || "libDrive", "!"),
                                 image: a.backdropPath
-                            }), t && "file" == a.type ? Object(w.jsxs)("div", {
+                            }), t && "file" == a.type ? Object(y.jsxs)("div", {
                                 className: "View",
-                                children: [Object(w.jsx)(He, Object(n.a)({}, this.props)), Object(w.jsx)(ra, {
+                                children: [Object(y.jsx)(Ge, Object(n.a)({}, this.props)), Object(y.jsx)(ra, {
                                     state: this.state
-                                }), Object(w.jsx)(ke, {})]
-                            }) : t && "directory" == a.type && a.title ? Object(w.jsxs)("div", {
+                                }), Object(y.jsx)(ke, {})]
+                            }) : t && "directory" == a.type && a.title ? Object(y.jsxs)("div", {
                                 className: "View",
-                                children: [Object(w.jsx)(He, Object(n.a)({}, this.props)), Object(w.jsx)(oa, {
+                                children: [Object(y.jsx)(Ge, Object(n.a)({}, this.props)), Object(y.jsx)(oa, {
                                     state: this.state
-                                }), Object(w.jsx)(ke, {})]
-                            }) : t && "directory" == a.type ? Object(w.jsxs)("div", {
+                                }), Object(y.jsx)(ke, {})]
+                            }) : t && "directory" == a.type ? Object(y.jsxs)("div", {
                                 className: "View",
-                                children: [Object(w.jsx)(He, Object(n.a)({}, this.props)), Object(w.jsx)(sa, {
+                                children: [Object(y.jsx)(Ge, Object(n.a)({}, this.props)), Object(y.jsx)(sa, {
                                     state: this.state,
                                     history: this.props.history
-                                }), Object(w.jsx)(ke, {})]
-                            }) : Object(w.jsx)(Re, {})
+                                }), Object(y.jsx)(ke, {})]
+                            }) : Object(y.jsx)(Me, {})
                         }
                     }]), a
                 }(r.Component));
-            a(245);
-            s.a.render(Object(w.jsx)(ot, {
-                children: Object(w.jsx)(c.a, {
-                    children: Object(w.jsxs)(u.a, {
+            a(246);
+            s.a.render(Object(y.jsx)(ot, {
+                children: Object(y.jsx)(c.a, {
+                    children: Object(y.jsxs)(h.a, {
                         theme: Ft,
-                        children: [Object(w.jsx)(d.a, {}), Object(w.jsxs)(l.d, {
-                            children: [Object(w.jsx)(l.b, {
+                        children: [Object(y.jsx)(d.a, {}), Object(y.jsxs)(l.d, {
+                            children: [Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/",
                                 render: function(e) {
-                                    return Object(w.jsx)(C, Object(n.a)({}, e), Ne())
+                                    return Object(y.jsx)(C, Object(n.a)({}, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/browse",
                                 render: function(e) {
-                                    return Object(w.jsx)(I, Object(n.a)({}, e), Ne())
+                                    return Object(y.jsx)(I, Object(n.a)({}, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/browse/:category",
                                 render: function(e) {
-                                    return Object(w.jsx)(xe, Object(n.a)({}, e), Ne())
+                                    return Object(y.jsx)(ve, Object(n.a)({}, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/starred",
                                 render: function(e) {
-                                    return Object(w.jsx)(Lt, Object(n.a)({}, e), Ne())
+                                    return Object(y.jsx)(Rt, Object(n.a)({}, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/genres",
                                 render: function(e) {
-                                    return Object(w.jsx)(_e, Object(n.a)({}, e), Ne())
+                                    return Object(y.jsx)(_e, Object(n.a)({}, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/login",
                                 render: function(e) {
-                                    return Object(w.jsx)(Le, Object(n.a)({}, e), Ne())
+                                    return Object(y.jsx)(Re, Object(n.a)({}, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/logout",
                                 render: function(e) {
-                                    return Object(w.jsx)(Pe, Object(n.a)({}, e), Ne())
+                                    return Object(y.jsx)(Pe, Object(n.a)({}, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/search",
                                 render: function(e) {
-                                    return Object(w.jsx)(ut, Object(n.a)({}, e), Ne())
+                                    return Object(y.jsx)(ht, Object(n.a)({}, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/search/:q",
                                 render: function(e) {
-                                    return Object(w.jsx)(st, Object(n.a)({}, e), Ne())
+                                    return Object(y.jsx)(st, Object(n.a)({}, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/settings",
                                 render: function(e) {
-                                    return Object(w.jsx)(Ot, Object(n.a)({}, e), Ne())
+                                    return Object(y.jsx)(Ot, Object(n.a)({}, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/settings/login",
                                 render: function(e) {
-                                    return Object(w.jsx)(vt, Object(n.a)({}, e), Ne())
+                                    return Object(y.jsx)(xt, Object(n.a)({}, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/view/m/:id",
                                 render: function(e) {
-                                    return Object(w.jsx)(ca, Object(n.a)({
+                                    return Object(y.jsx)(ca, Object(n.a)({
                                         type: "m"
                                     }, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/view/tb/:id",
                                 render: function(e) {
-                                    return Object(w.jsx)(ca, Object(n.a)({
+                                    return Object(y.jsx)(ca, Object(n.a)({
                                         type: "tb"
                                     }, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 exact: !0,
                                 path: "/view/ts/:id",
                                 render: function(e) {
-                                    return Object(w.jsx)(ca, Object(n.a)({
+                                    return Object(y.jsx)(ca, Object(n.a)({
                                         type: "ts"
                                     }, e), Ne())
                                 }
-                            }), Object(w.jsx)(l.b, {
+                            }), Object(y.jsx)(l.b, {
                                 path: "",
                                 render: function(e) {
-                                    return Object(w.jsx)(Qe, Object(n.a)({}, e), Ne())
+                                    return Object(y.jsx)(Qe, Object(n.a)({}, e), Ne())
                                 }
                             })]
                         })]
@@ -5032,7 +5042,20 @@
         }
     },
     [
-        [246, 1, 2]
+        [247, 1, 2]
     ]
 ]);
-//# sourceMappingURL=main.cd252eb0.chunk.js.map - Itens por pagina range||"60"
+//# sourceMappingURL=main.8acf8b5d.chunk.js.mapv2
+
+// Função para manter o aplicativo em estado de "keep alive"
+function keepAlive() {
+    // Envia uma solicitação HTTP para o servidor a cada 5 minutos
+    setInterval(function() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/keep-alive');
+        xhr.send();
+    }, 5 * 60 * 1000);
+}
+
+// Chama a função keepAlive quando a página é carregada
+window.addEventListener('load', keepAlive);
